@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A32D30271412EACB007C5873 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A32D30261412EACB007C5873 /* UIKit.framework */; };
+		A32D30291412EACB007C5873 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A32D30281412EACB007C5873 /* Foundation.framework */; };
+		A32D302B1412EACB007C5873 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A32D302A1412EACB007C5873 /* CoreGraphics.framework */; };
+		A32D30311412EACB007C5873 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A32D302F1412EACB007C5873 /* InfoPlist.strings */; };
+		A32D30331412EACB007C5873 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A32D30321412EACB007C5873 /* main.m */; };
+		A32D30371412EACB007C5873 /* LemonadeAlleyAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A32D30361412EACB007C5873 /* LemonadeAlleyAppDelegate.m */; };
+		A32D303A1412EACB007C5873 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A32D30381412EACB007C5873 /* MainWindow.xib */; };
+		A32D303D1412EACB007C5873 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A32D303C1412EACB007C5873 /* FirstViewController.m */; };
+		A32D30401412EACB007C5873 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A32D303F1412EACB007C5873 /* SecondViewController.m */; };
+		A32D30431412EACB007C5873 /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A32D30411412EACB007C5873 /* FirstView.xib */; };
+		A32D30461412EACB007C5873 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A32D30441412EACB007C5873 /* SecondView.xib */; };
+		A32D304E1412EACC007C5873 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A32D304D1412EACC007C5873 /* SenTestingKit.framework */; };
+		A32D304F1412EACC007C5873 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A32D30261412EACB007C5873 /* UIKit.framework */; };
+		A32D30501412EACC007C5873 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A32D30281412EACB007C5873 /* Foundation.framework */; };
+		A32D30511412EACC007C5873 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A32D302A1412EACB007C5873 /* CoreGraphics.framework */; };
+		A32D30591412EACC007C5873 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A32D30571412EACC007C5873 /* InfoPlist.strings */; };
+		A32D305B1412EACC007C5873 /* LemonadeAlleyTests.h in Resources */ = {isa = PBXBuildFile; fileRef = A32D305A1412EACC007C5873 /* LemonadeAlleyTests.h */; };
+		A32D305D1412EACC007C5873 /* LemonadeAlleyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A32D305C1412EACC007C5873 /* LemonadeAlleyTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A32D30521412EACC007C5873 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A32D30191412EACB007C5873 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A32D30211412EACB007C5873;
+			remoteInfo = LemonadeAlley;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A32D30221412EACB007C5873 /* LemonadeAlley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LemonadeAlley.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A32D30261412EACB007C5873 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A32D30281412EACB007C5873 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A32D302A1412EACB007C5873 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A32D302E1412EACB007C5873 /* LemonadeAlley-Info.plist */ = {isa = PBXFileReference; path = "LemonadeAlley-Info.plist"; sourceTree = "<group>"; };
+		A32D30301412EACB007C5873 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A32D30321412EACB007C5873 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A32D30341412EACB007C5873 /* LemonadeAlley-Prefix.pch */ = {isa = PBXFileReference; path = "LemonadeAlley-Prefix.pch"; sourceTree = "<group>"; };
+		A32D30351412EACB007C5873 /* LemonadeAlleyAppDelegate.h */ = {isa = PBXFileReference; path = LemonadeAlleyAppDelegate.h; sourceTree = "<group>"; };
+		A32D30361412EACB007C5873 /* LemonadeAlleyAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LemonadeAlleyAppDelegate.m; sourceTree = "<group>"; };
+		A32D30391412EACB007C5873 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		A32D303B1412EACB007C5873 /* FirstViewController.h */ = {isa = PBXFileReference; path = FirstViewController.h; sourceTree = "<group>"; };
+		A32D303C1412EACB007C5873 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		A32D303E1412EACB007C5873 /* SecondViewController.h */ = {isa = PBXFileReference; path = SecondViewController.h; sourceTree = "<group>"; };
+		A32D303F1412EACB007C5873 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		A32D30421412EACB007C5873 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstView.xib; sourceTree = "<group>"; };
+		A32D30451412EACB007C5873 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondView.xib; sourceTree = "<group>"; };
+		A32D304C1412EACC007C5873 /* LemonadeAlleyTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LemonadeAlleyTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A32D304D1412EACC007C5873 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A32D30561412EACC007C5873 /* LemonadeAlleyTests-Info.plist */ = {isa = PBXFileReference; path = "LemonadeAlleyTests-Info.plist"; sourceTree = "<group>"; };
+		A32D30581412EACC007C5873 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A32D305A1412EACC007C5873 /* LemonadeAlleyTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LemonadeAlleyTests.h; sourceTree = "<group>"; };
+		A32D305C1412EACC007C5873 /* LemonadeAlleyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LemonadeAlleyTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A32D301F1412EACB007C5873 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A32D30271412EACB007C5873 /* UIKit.framework in Frameworks */,
+				A32D30291412EACB007C5873 /* Foundation.framework in Frameworks */,
+				A32D302B1412EACB007C5873 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A32D30481412EACC007C5873 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A32D304E1412EACC007C5873 /* SenTestingKit.framework in Frameworks */,
+				A32D304F1412EACC007C5873 /* UIKit.framework in Frameworks */,
+				A32D30501412EACC007C5873 /* Foundation.framework in Frameworks */,
+				A32D30511412EACC007C5873 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A32D30171412EACB007C5873 = {
+			isa = PBXGroup;
+			children = (
+				A32D302C1412EACB007C5873 /* LemonadeAlley */,
+				A32D30541412EACC007C5873 /* LemonadeAlleyTests */,
+				A32D30251412EACB007C5873 /* Frameworks */,
+				A32D30231412EACB007C5873 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A32D30231412EACB007C5873 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A32D30221412EACB007C5873 /* LemonadeAlley.app */,
+				A32D304C1412EACC007C5873 /* LemonadeAlleyTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A32D30251412EACB007C5873 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A32D30261412EACB007C5873 /* UIKit.framework */,
+				A32D30281412EACB007C5873 /* Foundation.framework */,
+				A32D302A1412EACB007C5873 /* CoreGraphics.framework */,
+				A32D304D1412EACC007C5873 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A32D302C1412EACB007C5873 /* LemonadeAlley */ = {
+			isa = PBXGroup;
+			children = (
+				A32D30351412EACB007C5873 /* LemonadeAlleyAppDelegate.h */,
+				A32D30361412EACB007C5873 /* LemonadeAlleyAppDelegate.m */,
+				A32D30381412EACB007C5873 /* MainWindow.xib */,
+				A32D303B1412EACB007C5873 /* FirstViewController.h */,
+				A32D303C1412EACB007C5873 /* FirstViewController.m */,
+				A32D303E1412EACB007C5873 /* SecondViewController.h */,
+				A32D303F1412EACB007C5873 /* SecondViewController.m */,
+				A32D30411412EACB007C5873 /* FirstView.xib */,
+				A32D30441412EACB007C5873 /* SecondView.xib */,
+				A32D302D1412EACB007C5873 /* Supporting Files */,
+			);
+			path = LemonadeAlley;
+			sourceTree = "<group>";
+		};
+		A32D302D1412EACB007C5873 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A32D302E1412EACB007C5873 /* LemonadeAlley-Info.plist */,
+				A32D302F1412EACB007C5873 /* InfoPlist.strings */,
+				A32D30321412EACB007C5873 /* main.m */,
+				A32D30341412EACB007C5873 /* LemonadeAlley-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A32D30541412EACC007C5873 /* LemonadeAlleyTests */ = {
+			isa = PBXGroup;
+			children = (
+				A32D305A1412EACC007C5873 /* LemonadeAlleyTests.h */,
+				A32D305C1412EACC007C5873 /* LemonadeAlleyTests.m */,
+				A32D30551412EACC007C5873 /* Supporting Files */,
+			);
+			path = LemonadeAlleyTests;
+			sourceTree = "<group>";
+		};
+		A32D30551412EACC007C5873 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A32D30561412EACC007C5873 /* LemonadeAlleyTests-Info.plist */,
+				A32D30571412EACC007C5873 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A32D30211412EACB007C5873 /* LemonadeAlley */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A32D30601412EACC007C5873 /* Build configuration list for PBXNativeTarget "LemonadeAlley" */;
+			buildPhases = (
+				A32D301E1412EACB007C5873 /* Sources */,
+				A32D301F1412EACB007C5873 /* Frameworks */,
+				A32D30201412EACB007C5873 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LemonadeAlley;
+			productName = LemonadeAlley;
+			productReference = A32D30221412EACB007C5873 /* LemonadeAlley.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A32D304B1412EACC007C5873 /* LemonadeAlleyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A32D30631412EACC007C5873 /* Build configuration list for PBXNativeTarget "LemonadeAlleyTests" */;
+			buildPhases = (
+				A32D30471412EACC007C5873 /* Sources */,
+				A32D30481412EACC007C5873 /* Frameworks */,
+				A32D30491412EACC007C5873 /* Resources */,
+				A32D304A1412EACC007C5873 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A32D30531412EACC007C5873 /* PBXTargetDependency */,
+			);
+			name = LemonadeAlleyTests;
+			productName = LemonadeAlleyTests;
+			productReference = A32D304C1412EACC007C5873 /* LemonadeAlleyTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A32D30191412EACB007C5873 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = A32D301C1412EACB007C5873 /* Build configuration list for PBXProject "LemonadeAlley" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A32D30171412EACB007C5873;
+			productRefGroup = A32D30231412EACB007C5873 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A32D30211412EACB007C5873 /* LemonadeAlley */,
+				A32D304B1412EACC007C5873 /* LemonadeAlleyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A32D30201412EACB007C5873 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A32D30311412EACB007C5873 /* InfoPlist.strings in Resources */,
+				A32D303A1412EACB007C5873 /* MainWindow.xib in Resources */,
+				A32D30431412EACB007C5873 /* FirstView.xib in Resources */,
+				A32D30461412EACB007C5873 /* SecondView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A32D30491412EACC007C5873 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A32D30591412EACC007C5873 /* InfoPlist.strings in Resources */,
+				A32D305B1412EACC007C5873 /* LemonadeAlleyTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A32D304A1412EACC007C5873 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A32D301E1412EACB007C5873 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A32D30331412EACB007C5873 /* main.m in Sources */,
+				A32D30371412EACB007C5873 /* LemonadeAlleyAppDelegate.m in Sources */,
+				A32D303D1412EACB007C5873 /* FirstViewController.m in Sources */,
+				A32D30401412EACB007C5873 /* SecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A32D30471412EACC007C5873 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A32D305D1412EACC007C5873 /* LemonadeAlleyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A32D30531412EACC007C5873 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A32D30211412EACB007C5873 /* LemonadeAlley */;
+			targetProxy = A32D30521412EACC007C5873 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A32D302F1412EACB007C5873 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A32D30301412EACB007C5873 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A32D30381412EACB007C5873 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A32D30391412EACB007C5873 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		A32D30411412EACB007C5873 /* FirstView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A32D30421412EACB007C5873 /* en */,
+			);
+			name = FirstView.xib;
+			sourceTree = "<group>";
+		};
+		A32D30441412EACB007C5873 /* SecondView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A32D30451412EACB007C5873 /* en */,
+			);
+			name = SecondView.xib;
+			sourceTree = "<group>";
+		};
+		A32D30571412EACC007C5873 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A32D30581412EACC007C5873 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A32D305E1412EACC007C5873 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A32D305F1412EACC007C5873 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A32D30611412EACC007C5873 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LemonadeAlley/LemonadeAlley-Prefix.pch";
+				INFOPLIST_FILE = "LemonadeAlley/LemonadeAlley-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A32D30621412EACC007C5873 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LemonadeAlley/LemonadeAlley-Prefix.pch";
+				INFOPLIST_FILE = "LemonadeAlley/LemonadeAlley-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A32D30641412EACC007C5873 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LemonadeAlley.app/LemonadeAlley";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LemonadeAlley/LemonadeAlley-Prefix.pch";
+				INFOPLIST_FILE = "LemonadeAlleyTests/LemonadeAlleyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A32D30651412EACC007C5873 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LemonadeAlley.app/LemonadeAlley";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LemonadeAlley/LemonadeAlley-Prefix.pch";
+				INFOPLIST_FILE = "LemonadeAlleyTests/LemonadeAlleyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A32D301C1412EACB007C5873 /* Build configuration list for PBXProject "LemonadeAlley" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A32D305E1412EACC007C5873 /* Debug */,
+				A32D305F1412EACC007C5873 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A32D30601412EACC007C5873 /* Build configuration list for PBXNativeTarget "LemonadeAlley" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A32D30611412EACC007C5873 /* Debug */,
+				A32D30621412EACC007C5873 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A32D30631412EACC007C5873 /* Build configuration list for PBXNativeTarget "LemonadeAlleyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A32D30641412EACC007C5873 /* Debug */,
+				A32D30651412EACC007C5873 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A32D30191412EACB007C5873 /* Project object */;
+}
