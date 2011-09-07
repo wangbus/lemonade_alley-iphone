@@ -25,6 +25,14 @@
 		A32D30591412EACC007C5873 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A32D30571412EACC007C5873 /* InfoPlist.strings */; };
 		A32D305B1412EACC007C5873 /* LemonadeAlleyTests.h in Resources */ = {isa = PBXBuildFile; fileRef = A32D305A1412EACC007C5873 /* LemonadeAlleyTests.h */; };
 		A32D305D1412EACC007C5873 /* LemonadeAlleyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A32D305C1412EACC007C5873 /* LemonadeAlleyTests.m */; };
+		A32D307314130192007C5873 /* 34-coffee.png in Resources */ = {isa = PBXBuildFile; fileRef = A32D307214130192007C5873 /* 34-coffee.png */; };
+		A333DE711417654500254DA0 /* EventInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A333DE6F1417654500254DA0 /* EventInfoViewController.m */; };
+		A333DE721417654500254DA0 /* EventInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A333DE701417654500254DA0 /* EventInfoViewController.xib */; };
+		A366FCE714164AB900EC8640 /* SplashScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = A366FCE614164AB900EC8640 /* SplashScreenController.m */; };
+		A3850028141796DD00CFB95D /* BrochureNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3850026141796DD00CFB95D /* BrochureNavigationController.m */; };
+		A385002E14179B5F00CFB95D /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A385002C14179B5F00CFB95D /* DetailsViewController.m */; };
+		A385002F14179B5F00CFB95D /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A385002D14179B5F00CFB95D /* DetailsViewController.xib */; };
+		A39315F114164DE9006F1F80 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A39315F014164DE9006F1F80 /* Default.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,25 +50,38 @@
 		A32D30261412EACB007C5873 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A32D30281412EACB007C5873 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A32D302A1412EACB007C5873 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		A32D302E1412EACB007C5873 /* LemonadeAlley-Info.plist */ = {isa = PBXFileReference; path = "LemonadeAlley-Info.plist"; sourceTree = "<group>"; };
+		A32D302E1412EACB007C5873 /* LemonadeAlley-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LemonadeAlley-Info.plist"; sourceTree = "<group>"; };
 		A32D30301412EACB007C5873 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A32D30321412EACB007C5873 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A32D30341412EACB007C5873 /* LemonadeAlley-Prefix.pch */ = {isa = PBXFileReference; path = "LemonadeAlley-Prefix.pch"; sourceTree = "<group>"; };
-		A32D30351412EACB007C5873 /* LemonadeAlleyAppDelegate.h */ = {isa = PBXFileReference; path = LemonadeAlleyAppDelegate.h; sourceTree = "<group>"; };
+		A32D30341412EACB007C5873 /* LemonadeAlley-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LemonadeAlley-Prefix.pch"; sourceTree = "<group>"; };
+		A32D30351412EACB007C5873 /* LemonadeAlleyAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LemonadeAlleyAppDelegate.h; sourceTree = "<group>"; };
 		A32D30361412EACB007C5873 /* LemonadeAlleyAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LemonadeAlleyAppDelegate.m; sourceTree = "<group>"; };
 		A32D30391412EACB007C5873 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		A32D303B1412EACB007C5873 /* FirstViewController.h */ = {isa = PBXFileReference; path = FirstViewController.h; sourceTree = "<group>"; };
+		A32D303B1412EACB007C5873 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		A32D303C1412EACB007C5873 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		A32D303E1412EACB007C5873 /* SecondViewController.h */ = {isa = PBXFileReference; path = SecondViewController.h; sourceTree = "<group>"; };
+		A32D303E1412EACB007C5873 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		A32D303F1412EACB007C5873 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		A32D30421412EACB007C5873 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstView.xib; sourceTree = "<group>"; };
 		A32D30451412EACB007C5873 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondView.xib; sourceTree = "<group>"; };
 		A32D304C1412EACC007C5873 /* LemonadeAlleyTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LemonadeAlleyTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A32D304D1412EACC007C5873 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		A32D30561412EACC007C5873 /* LemonadeAlleyTests-Info.plist */ = {isa = PBXFileReference; path = "LemonadeAlleyTests-Info.plist"; sourceTree = "<group>"; };
+		A32D30561412EACC007C5873 /* LemonadeAlleyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LemonadeAlleyTests-Info.plist"; sourceTree = "<group>"; };
 		A32D30581412EACC007C5873 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A32D305A1412EACC007C5873 /* LemonadeAlleyTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LemonadeAlleyTests.h; sourceTree = "<group>"; };
 		A32D305C1412EACC007C5873 /* LemonadeAlleyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LemonadeAlleyTests.m; sourceTree = "<group>"; };
+		A32D307214130192007C5873 /* 34-coffee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "34-coffee.png"; path = "../../glyphish-icons/icons/34-coffee.png"; sourceTree = "<group>"; };
+		A333DE6E1417654500254DA0 /* EventInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventInfoViewController.h; sourceTree = "<group>"; };
+		A333DE6F1417654500254DA0 /* EventInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventInfoViewController.m; sourceTree = "<group>"; };
+		A333DE701417654500254DA0 /* EventInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventInfoViewController.xib; sourceTree = "<group>"; };
+		A366FCE314164AA800EC8640 /* SplashScreenDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashScreenDelegate.h; sourceTree = "<group>"; };
+		A366FCE414164AA800EC8640 /* SplashScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashScreenController.h; sourceTree = "<group>"; };
+		A366FCE614164AB900EC8640 /* SplashScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashScreenController.m; sourceTree = "<group>"; };
+		A3850025141796DD00CFB95D /* BrochureNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrochureNavigationController.h; sourceTree = "<group>"; };
+		A3850026141796DD00CFB95D /* BrochureNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrochureNavigationController.m; sourceTree = "<group>"; };
+		A385002B14179B5F00CFB95D /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		A385002C14179B5F00CFB95D /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		A385002D14179B5F00CFB95D /* DetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		A39315F014164DE9006F1F80 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,15 +142,13 @@
 		A32D302C1412EACB007C5873 /* LemonadeAlley */ = {
 			isa = PBXGroup;
 			children = (
+				A366FCE414164AA800EC8640 /* SplashScreenController.h */,
+				A366FCE614164AB900EC8640 /* SplashScreenController.m */,
+				A366FCE314164AA800EC8640 /* SplashScreenDelegate.h */,
+				A32D30711412F979007C5873 /* ViewControllers */,
 				A32D30351412EACB007C5873 /* LemonadeAlleyAppDelegate.h */,
 				A32D30361412EACB007C5873 /* LemonadeAlleyAppDelegate.m */,
 				A32D30381412EACB007C5873 /* MainWindow.xib */,
-				A32D303B1412EACB007C5873 /* FirstViewController.h */,
-				A32D303C1412EACB007C5873 /* FirstViewController.m */,
-				A32D303E1412EACB007C5873 /* SecondViewController.h */,
-				A32D303F1412EACB007C5873 /* SecondViewController.m */,
-				A32D30411412EACB007C5873 /* FirstView.xib */,
-				A32D30441412EACB007C5873 /* SecondView.xib */,
 				A32D302D1412EACB007C5873 /* Supporting Files */,
 			);
 			path = LemonadeAlley;
@@ -138,6 +157,7 @@
 		A32D302D1412EACB007C5873 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A32D30701412F484007C5873 /* Images */,
 				A32D302E1412EACB007C5873 /* LemonadeAlley-Info.plist */,
 				A32D302F1412EACB007C5873 /* InfoPlist.strings */,
 				A32D30321412EACB007C5873 /* main.m */,
@@ -163,6 +183,36 @@
 				A32D30571412EACC007C5873 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A32D30701412F484007C5873 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A39315F014164DE9006F1F80 /* Default.png */,
+				A32D307214130192007C5873 /* 34-coffee.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		A32D30711412F979007C5873 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A3850025141796DD00CFB95D /* BrochureNavigationController.h */,
+				A3850026141796DD00CFB95D /* BrochureNavigationController.m */,
+				A32D30411412EACB007C5873 /* FirstView.xib */,
+				A32D303B1412EACB007C5873 /* FirstViewController.h */,
+				A32D303C1412EACB007C5873 /* FirstViewController.m */,
+				A32D30441412EACB007C5873 /* SecondView.xib */,
+				A32D303E1412EACB007C5873 /* SecondViewController.h */,
+				A32D303F1412EACB007C5873 /* SecondViewController.m */,
+				A333DE701417654500254DA0 /* EventInfoViewController.xib */,
+				A333DE6E1417654500254DA0 /* EventInfoViewController.h */,
+				A333DE6F1417654500254DA0 /* EventInfoViewController.m */,
+				A385002B14179B5F00CFB95D /* DetailsViewController.h */,
+				A385002C14179B5F00CFB95D /* DetailsViewController.m */,
+				A385002D14179B5F00CFB95D /* DetailsViewController.xib */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +286,10 @@
 				A32D303A1412EACB007C5873 /* MainWindow.xib in Resources */,
 				A32D30431412EACB007C5873 /* FirstView.xib in Resources */,
 				A32D30461412EACB007C5873 /* SecondView.xib in Resources */,
+				A32D307314130192007C5873 /* 34-coffee.png in Resources */,
+				A39315F114164DE9006F1F80 /* Default.png in Resources */,
+				A333DE721417654500254DA0 /* EventInfoViewController.xib in Resources */,
+				A385002F14179B5F00CFB95D /* DetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +329,10 @@
 				A32D30371412EACB007C5873 /* LemonadeAlleyAppDelegate.m in Sources */,
 				A32D303D1412EACB007C5873 /* FirstViewController.m in Sources */,
 				A32D30401412EACB007C5873 /* SecondViewController.m in Sources */,
+				A366FCE714164AB900EC8640 /* SplashScreenController.m in Sources */,
+				A333DE711417654500254DA0 /* EventInfoViewController.m in Sources */,
+				A3850028141796DD00CFB95D /* BrochureNavigationController.m in Sources */,
+				A385002E14179B5F00CFB95D /* DetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +516,7 @@
 				A32D30621412EACC007C5873 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A32D30631412EACC007C5873 /* Build configuration list for PBXNativeTarget "LemonadeAlleyTests" */ = {
 			isa = XCConfigurationList;
@@ -466,6 +525,7 @@
 				A32D30651412EACC007C5873 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

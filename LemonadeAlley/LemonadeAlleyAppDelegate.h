@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SplashScreenController.h"
 
 @interface LemonadeAlleyAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate>
-
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-
 @property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
+@property (nonatomic, retain) IBOutlet SplashScreenController *splashScreen;
 
 @end

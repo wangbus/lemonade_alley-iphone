@@ -12,12 +12,19 @@
 
 @synthesize window = _window;
 @synthesize tabBarController = _tabBarController;
+@synthesize splashScreen;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
     // Add the tab bar controller's current view as a subview of the window
     self.window.rootViewController = self.tabBarController;
+    [self.window addSubview:self.tabBarController.view];
+    self.splashScreen.showsStatusBarOnDismissal = YES;
+    self.splashScreen.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+
+    self.tabBarController.delegate = self;
+    [self.tabBarController presentModalViewController:splashScreen animated:NO];
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -65,15 +72,16 @@
 {
     [_window release];
     [_tabBarController release];
+    [splashScreen release], splashScreen = nil;
     [super dealloc];
 }
 
-/*
 // Optional UITabBarControllerDelegate method.
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
 {
+    
+    
 }
-*/
 
 /*
 // Optional UITabBarControllerDelegate method.
@@ -81,5 +89,17 @@
 {
 }
 */
+
+- (void)splashScreenDidAppear:(SplashScreenController *)splashScreen {
+    NSLog(@"splashScreenDidAppear!");
+}
+
+- (void)splashScreenWillDisappear:(SplashScreenController *)splashScreen {
+    NSLog(@"splashScreenWillDisappear!");
+}
+
+- (void)splashScreenDidDisappear:(SplashScreenController *)splashScreen {
+    self.splashScreen = nil;
+}
 
 @end
