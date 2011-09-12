@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DetailsViewController.h"
-#import "BrochureNavigationController.h"
-@interface EventInfoViewController : UIViewController
+#import "PhotoSetViewController.h"
 
-- (IBAction)drillDown:(id)sender;
+@interface InfoDetailsViewController : UIViewController {
+    IBOutlet UIWebView *webView;
+}
 
+@property (nonatomic, assign) NSURL *url;
 
 @end

@@ -1,14 +1,25 @@
 //
-//  DetailsViewController.m
+//  EventInfoViewController.m
 //  LemonadeAlley
 //
-//  Created by James Wang on 9/7/11.
+//  Created by James Wang on 9/6/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "DetailsViewController.h"
+#import "InfoDetailsViewController.h"
 
-@implementation DetailsViewController
+@implementation InfoDetailsViewController
+@synthesize url;
+
+//- (IBAction)drillDown:(id)sender
+//{
+//    NSLog(@"Details");
+//    PhotoSetViewController *dvc = [[PhotoSetViewController alloc] init];
+//    dvc.title = @"Details";
+//    
+//    [self.navigationController pushViewController:dvc animated:YES];
+//    [dvc release];
+//}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,14 +40,27 @@
 
 #pragma mark - View lifecycle
 
+- (void)viewWillAppear:(BOOL)animated {
+	// to fix the controller showing under the status bar
+	self.view.frame = [[UIScreen mainScreen] applicationFrame];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSLog(@"didload");
     // Do any additional setup after loading the view from its nib.
+//    NSString *urlAddress = @"http://www.google.com";
+//    NSURL *url = [NSURL URLWithString:urlAddress];
+    
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    [webView loadRequest:requestObj];
 }
 
 - (void)viewDidUnload
 {
+    [webView release];
+    webView = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -48,4 +72,8 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (void)dealloc {
+    [webView release];
+    [super dealloc];
+}
 @end

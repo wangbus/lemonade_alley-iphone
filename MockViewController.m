@@ -1,14 +1,14 @@
 //
-//  BrochureNavigationController.m
+//  MockViewController.m
 //  LemonadeAlley
 //
-//  Created by James Wang on 9/7/11.
+//  Created by James Wang on 9/12/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "BrochureNavigationController.h"
+#import "MockViewController.h"
 
-@implementation BrochureNavigationController
+@implementation MockViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,11 +28,6 @@
 }
 
 #pragma mark - View lifecycle
-
-- (void)viewWillAppear:(BOOL)animated {
-	// to fix the controller showing under the status bar
-	self.view.frame = [[UIScreen mainScreen] applicationFrame];
-}
 
 - (void)viewDidLoad
 {

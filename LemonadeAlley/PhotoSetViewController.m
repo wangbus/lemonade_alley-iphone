@@ -1,24 +1,16 @@
 //
-//  EventInfoViewController.m
+//  DetailsViewController.m
 //  LemonadeAlley
 //
-//  Created by James Wang on 9/6/11.
+//  Created by James Wang on 9/7/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "EventInfoViewController.h"
+#import "PhotoSetViewController.h"
+#import "PhotoSet.h"
 
-@implementation EventInfoViewController
-
-- (IBAction)drillDown:(id)sender
-{
-    NSLog(@"Details");
-    DetailsViewController *dvc = [[DetailsViewController alloc] init];
-    dvc.title = @"Details";
-    
-    [self.navigationController pushViewController:dvc animated:YES];
-    [dvc release];
-}
+@implementation PhotoSetViewController
+@synthesize photoSet = _photoSet;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -39,15 +31,11 @@
 
 #pragma mark - View lifecycle
 
-- (void)viewWillAppear:(BOOL)animated {
-	// to fix the controller showing under the status bar
-	self.view.frame = [[UIScreen mainScreen] applicationFrame];
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.photoSource = [PhotoSet samplePhotoSet];
 }
 
 - (void)viewDidUnload
@@ -61,6 +49,11 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (void) dealloc {
+    self.photoSet = nil;    
+    [super dealloc];
 }
 
 @end
