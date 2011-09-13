@@ -48,7 +48,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"didload");
     // Do any additional setup after loading the view from its nib.
 //    NSString *urlAddress = @"http://www.google.com";
 //    NSURL *url = [NSURL URLWithString:urlAddress];

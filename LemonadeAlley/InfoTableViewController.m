@@ -8,6 +8,8 @@
 
 #import "InfoTableViewController.h"
 #import "InfoDetailsViewController.h"
+#import "WordPressBlogViewController.h"
+
 @implementation InfoTableViewController
 @synthesize topics;
 
@@ -195,13 +197,14 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      [detailViewController release];
      */
-    InfoDetailsViewController *detailViewController = [InfoDetailsViewController alloc];
-    detailViewController.url = url;
+//    InfoDetailsViewController *detailViewController = [InfoDetailsViewController alloc];
+    WordPressBlogViewController *detailsViewController = [WordPressBlogViewController alloc];
+//    detailViewController.url = url;
     
     // ...
     // Pass the selected object to the new view controller.
-    [self.navigationController pushViewController:detailViewController animated:YES];
-    [detailViewController release];
+    [self.navigationController pushViewController:detailsViewController animated:YES];
+    [detailsViewController release];
 }
 
 @end
