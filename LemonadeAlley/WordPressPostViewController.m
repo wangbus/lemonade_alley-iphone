@@ -5,6 +5,8 @@
 //  Created by Karl Monaghan on 26/12/2010.
 //  Copyright 2010 Crayons and Brown Paper. All rights reserved.
 //
+#import "Three20/Three20.h"
+#import "Three20UI/TTNavigator.h"
 #import "TTWordPress.h"
 
 #import "WordPressPostViewController.h"
@@ -15,7 +17,7 @@
 #import "TableItemDisclosure.h"
 
 @implementation WordPressPostViewController
-///////////////////////////////////////////////////////////////////////////////////////////////////
+
 - (id)initWithPost:(WordPressPost*)post {
 	self = [super initWithNibName:nil bundle:nil];
     

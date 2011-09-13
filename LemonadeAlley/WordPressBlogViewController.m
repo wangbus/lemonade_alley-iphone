@@ -5,6 +5,7 @@
 //  Created by Karl Monaghan on 26/12/2010.
 //  Copyright 2010 Crayons and Brown Paper. All rights reserved.
 //
+#import "Three20UI/TTTableViewNetworkEnabledDelegate.h"
 #import "TTWordPress.h"
 
 #import "WordPressBlogViewController.h"
@@ -13,18 +14,22 @@
 #import "WordPressPost.h"
 
 @implementation WordPressBlogViewController
-///////////////////////////////////////////////////////////////////////////////////////////////////
+
+// from ib
+- (id) initWithCoder:(NSCoder *)aCoder{
+    [self init];
+    return self;
+}
+               
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
 	self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     
     if (self) 
     {
-		self.variableHeightRows = YES;
-        
-		self.title = WP_POST_LIST_TITLE;
-
-		self.tabBarItem = [[[UITabBarItem alloc] initWithTitle:WP_POST_LIST_BAR_TITLE 
-                                                         image:[UIImage imageNamed:@"166-newspaper.png"] 
+        self.variableHeightRows = YES;
+        self.title = WP_POST_LIST_TITLE;
+        self.tabBarItem = [[[UITabBarItem alloc] initWithTitle:WP_POST_LIST_BAR_TITLE 
+                                                         image:[UIImage imageNamed:@"18-envelope.png"] 
                                                            tag:12348] autorelease];
 	}
 	return self;

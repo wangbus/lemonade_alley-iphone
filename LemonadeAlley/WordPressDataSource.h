@@ -6,7 +6,7 @@
 //  Copyright 2010 Crayons and Brown Paper. All rights reserved.
 //
 
-#import "TTListDataSource.h"
+#import "Three20UI/TTListDataSource.h"
 
 @class WordPressPostModel;
 

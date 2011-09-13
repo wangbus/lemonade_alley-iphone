@@ -8,7 +8,7 @@
 
 #import "InfoTableViewController.h"
 #import "InfoDetailsViewController.h"
-#import "WordPressBlogViewController.h"
+//#import "WordPressBlogViewController.h"
 
 @implementation InfoTableViewController
 @synthesize topics;
@@ -197,8 +197,8 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      [detailViewController release];
      */
-//    InfoDetailsViewController *detailViewController = [InfoDetailsViewController alloc];
-    WordPressBlogViewController *detailsViewController = [WordPressBlogViewController alloc];
+    InfoDetailsViewController *detailsViewController = [[InfoDetailsViewController alloc] init];
+//    WordPressBlogViewController *detailsViewController = [[WordPressBlogViewController alloc] init];
 //    detailViewController.url = url;
     
     // ...

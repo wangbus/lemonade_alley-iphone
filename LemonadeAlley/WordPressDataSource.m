@@ -5,7 +5,8 @@
 //  Created by Karl Monaghan on 26/12/2010.
 //  Copyright 2010 Crayons and Brown Paper. All rights reserved.
 //
-
+#import "Three20/Three20.h"
+#import "Three20Core/TTDebug.h"
 #import "WordPressDataSource.h"
 #import "WordPressPostModel.h"
 #import "WordPressPost.h"

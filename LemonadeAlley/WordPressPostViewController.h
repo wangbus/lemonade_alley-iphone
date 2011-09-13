@@ -7,7 +7,7 @@
 //
 
 #import "WordPressBaseTableViewController.h"
-#import "TTActivityLabel.h"
+#import "Three20UI/TTActivityLabel.h"
 
 @class WordPressPost;
 

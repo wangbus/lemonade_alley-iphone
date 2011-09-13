@@ -6,7 +6,9 @@
 //  Copyright 2011 Crayons and Brown Paper. All rights reserved.
 //
 
-#import "Three20/TTTableViewCell.h"
+#import "Three20UI/TTTableViewCell.h"
+#import "Three20UI/TTStyledTextLabel.h"
+
 @class WordPressComment;
 
 @interface WordPressCommentTableCell : TTTableViewCell {

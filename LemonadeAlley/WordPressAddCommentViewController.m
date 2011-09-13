@@ -5,14 +5,15 @@
 //  Created by Karl Monaghan on 06/01/2011.
 //  Copyright 2011 Crayons and Brown Paper. All rights reserved.
 //
-
+#import "Three20/Three20.h"
+#import "Three20Core/TTDebug.h"
 #import "WordPressAddCommentViewController.h"
 #import "WordPressPost.h"
 #import "TTWordPress.h"
 
 #import "Three20Core/NSStringAdditions.h"
-#import <extThree20JSON/extThree20JSON.h>
-#import <extThree20JSON/NSObject+SBJSON.h>
+#import "extThree20JSON/extThree20JSON.h"
+#import "extThree20JSON/NSObject+SBJSON.h"
 #import "GTMNSString+HTML.h"
 
 @implementation WordPressAddCommentViewController

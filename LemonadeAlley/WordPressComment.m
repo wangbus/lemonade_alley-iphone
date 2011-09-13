@@ -5,7 +5,8 @@
 //  Created by Karl Monaghan on 05/01/2011.
 //  Copyright 2011 Crayons and Brown Paper. All rights reserved.
 //
-
+#import "Three20/Three20.h"
+#import "Three20Core/TTDebug.h"
 #import "WordPressComment.h"
 
 

@@ -52,6 +52,7 @@
 		A36EC7BE141E30C100752D14 /* InfoTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A36EC7BC141E30C100752D14 /* InfoTableView.xib */; };
 		A36EC872141E32C900752D14 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A36EC870141E32C900752D14 /* MainWindow.xib */; };
 		A37166D71418D1A300C9262A /* PhotoSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A37166D61418D1A300C9262A /* PhotoSet.m */; };
+		A37560EF141F6BEC00C29460 /* libextThree20JSON+SBJSON.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A37560A4141F6B6300C29460 /* libextThree20JSON+SBJSON.a */; };
 		A385002E14179B5F00CFB95D /* PhotoSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A385002C14179B5F00CFB95D /* PhotoSetViewController.m */; };
 		A385002F14179B5F00CFB95D /* PhotoSetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A385002D14179B5F00CFB95D /* PhotoSetViewController.xib */; };
 		A39315F114164DE9006F1F80 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A39315F014164DE9006F1F80 /* Default.png */; };
@@ -74,6 +75,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = A32D30211412EACB007C5873;
 			remoteInfo = LemonadeAlley;
+		};
+		A37560A3141F6B6300C29460 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A375609D141F6B6300C29460 /* extThree20JSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BEF31F3A0F352DF5000DE5D2;
+			remoteInfo = "extThree20JSON+SBJSON";
+		};
+		A37560A5141F6B6300C29460 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A375609D141F6B6300C29460 /* extThree20JSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6E645BD91187751200F08CB1;
+			remoteInfo = "extThree20JSON+YAJL";
+		};
+		A37560A7141F6B6300C29460 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A375609D141F6B6300C29460 /* extThree20JSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EB9E6C6210B6A8F800DE563C;
+			remoteInfo = "extThree20JSONUnitTests+SBJSON";
+		};
+		A37560ED141F6BE300C29460 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A375609D141F6B6300C29460 /* extThree20JSON.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
+			remoteInfo = "extThree20JSON+SBJSON";
 		};
 		A3F2A14314186B0000DADAD0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -315,6 +344,7 @@
 		A36EC871141E32C900752D14 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = LemonadeAlley/en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		A37166D51418D1A300C9262A /* PhotoSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoSet.h; sourceTree = "<group>"; };
 		A37166D61418D1A300C9262A /* PhotoSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoSet.m; sourceTree = "<group>"; };
+		A375609D141F6B6300C29460 /* extThree20JSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = extThree20JSON.xcodeproj; path = ../three20/src/extThree20JSON/extThree20JSON.xcodeproj; sourceTree = "<group>"; };
 		A385002B14179B5F00CFB95D /* PhotoSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoSetViewController.h; sourceTree = "<group>"; };
 		A385002C14179B5F00CFB95D /* PhotoSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoSetViewController.m; sourceTree = "<group>"; };
 		A385002D14179B5F00CFB95D /* PhotoSetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoSetViewController.xib; sourceTree = "<group>"; };
@@ -337,6 +367,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A37560EF141F6BEC00C29460 /* libextThree20JSON+SBJSON.a in Frameworks */,
 				A3F2A1121418652F00DADAD0 /* QuartzCore.framework in Frameworks */,
 				A3F2A18B14186D3600DADAD0 /* libThree20.a in Frameworks */,
 				A3F2A18C14186D3600DADAD0 /* libThree20Core.a in Frameworks */,
@@ -370,6 +401,7 @@
 			children = (
 				A32D302C1412EACB007C5873 /* LemonadeAlley */,
 				A32D30541412EACC007C5873 /* LemonadeAlleyTests */,
+				A375609D141F6B6300C29460 /* extThree20JSON.xcodeproj */,
 				A3F2A14F14186CAF00DADAD0 /* Three20Core.xcodeproj */,
 				A3F2A15014186CAF00DADAD0 /* Three20Network.xcodeproj */,
 				A3F2A15114186CAF00DADAD0 /* Three20Style.xcodeproj */,
@@ -406,14 +438,13 @@
 		A32D302C1412EACB007C5873 /* LemonadeAlley */ = {
 			isa = PBXGroup;
 			children = (
-				A36B8BED141F4772004857B6 /* TTWP */,
-				A36B8BD0141F46B7004857B6 /* Google Stuff */,
 				A35DD7EB141C483600AD5EBB /* GUI */,
 				A3F2A1A31418824E00DADAD0 /* Photo */,
 				A3F2A1A2141870C600DADAD0 /* Splash */,
 				A32D30711412F979007C5873 /* ViewControllers */,
 				A32D30351412EACB007C5873 /* LemonadeAlleyAppDelegate.h */,
 				A32D30361412EACB007C5873 /* LemonadeAlleyAppDelegate.m */,
+				A36B8BED141F4772004857B6 /* TTWordpress */,
 				A32D302D1412EACB007C5873 /* Supporting Files */,
 			);
 			path = LemonadeAlley;
@@ -501,9 +532,10 @@
 			name = "Google Stuff";
 			sourceTree = "<group>";
 		};
-		A36B8BED141F4772004857B6 /* TTWP */ = {
+		A36B8BED141F4772004857B6 /* TTWordpress */ = {
 			isa = PBXGroup;
 			children = (
+				A36B8BD0141F46B7004857B6 /* Google Stuff */,
 				A36B8BEE141F4795004857B6 /* TableCellDisclosure.h */,
 				A36B8BEF141F4795004857B6 /* TableCellDisclosure.m */,
 				A36B8BF0141F4795004857B6 /* TableItemDisclosure.h */,
@@ -542,7 +574,17 @@
 				A36B8C14141F4795004857B6 /* WPTabBarController.m */,
 				A36B8C28141F47B2004857B6 /* default.css */,
 			);
-			name = TTWP;
+			name = TTWordpress;
+			sourceTree = "<group>";
+		};
+		A375609E141F6B6300C29460 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A37560A4141F6B6300C29460 /* libextThree20JSON+SBJSON.a */,
+				A37560A6141F6B6300C29460 /* libextThree20JSON+YAJL.a */,
+				A37560A8141F6B6300C29460 /* extJSONUnitTests+SBJSON.octest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		A3F2A11914186AFF00DADAD0 /* Products */ = {
@@ -645,6 +687,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A37560EE141F6BE300C29460 /* PBXTargetDependency */,
 				A3F2A19314186E5C00DADAD0 /* PBXTargetDependency */,
 				A3F2A19514186E5C00DADAD0 /* PBXTargetDependency */,
 				A3F2A19714186E5C00DADAD0 /* PBXTargetDependency */,
@@ -694,6 +737,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = A375609E141F6B6300C29460 /* Products */;
+					ProjectRef = A375609D141F6B6300C29460 /* extThree20JSON.xcodeproj */;
+				},
+				{
 					ProductGroup = A3F2A11914186AFF00DADAD0 /* Products */;
 					ProjectRef = A3F2A11814186AFF00DADAD0 /* Three20.xcodeproj */;
 				},
@@ -731,6 +778,27 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		A37560A4141F6B6300C29460 /* libextThree20JSON+SBJSON.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libextThree20JSON+SBJSON.a";
+			remoteRef = A37560A3141F6B6300C29460 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A37560A6141F6B6300C29460 /* libextThree20JSON+YAJL.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libextThree20JSON+YAJL.a";
+			remoteRef = A37560A5141F6B6300C29460 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A37560A8141F6B6300C29460 /* extJSONUnitTests+SBJSON.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "extJSONUnitTests+SBJSON.octest";
+			remoteRef = A37560A7141F6B6300C29460 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		A3F2A14414186B0000DADAD0 /* libThree20.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -943,6 +1011,11 @@
 			isa = PBXTargetDependency;
 			target = A32D30211412EACB007C5873 /* LemonadeAlley */;
 			targetProxy = A32D30521412EACC007C5873 /* PBXContainerItemProxy */;
+		};
+		A37560EE141F6BE300C29460 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "extThree20JSON+SBJSON";
+			targetProxy = A37560ED141F6BE300C29460 /* PBXContainerItemProxy */;
 		};
 		A3F2A19314186E5C00DADAD0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

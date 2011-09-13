@@ -8,6 +8,7 @@
 
 // UI
 #import "Three20UI/TTTableViewCell.h"
+#import "Three20UI/TTImageView.h"
 
 @class WordPressPost;
 

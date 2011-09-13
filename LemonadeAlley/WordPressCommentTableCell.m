@@ -18,10 +18,13 @@
 // Style
 #import "Three20Style/TTGlobalStyle.h"
 #import "Three20Style/TTDefaultStyleSheet.h"
+#import "Three20STyle/TTStyledText.h"
 
 // Core
 #import "Three20Core/TTCorePreprocessorMacros.h"
 #import "Three20Core/NSDateAdditions.h"   
+
+
 
 @implementation WordPressCommentTableCell
 

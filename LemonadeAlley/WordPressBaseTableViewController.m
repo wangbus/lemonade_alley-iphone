@@ -7,8 +7,8 @@
 //
 
 #import "WordPressBaseTableViewController.h"
-
-#import "Three20/TTWordPress.h"
+#import "Three20UI/TTTableViewVarHeightDelegate.h"
+#import "TTWordPress.h"
 
 @implementation WordPressBaseTableViewController
 ///////////////////////////////////////////////////////////////////////////////////////////////////
