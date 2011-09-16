@@ -159,7 +159,7 @@
     {
 		[self dismissPopupViewControllerAnimated:YES];
 	} else {
-        [super showAnimationDidStop];
+//        [super showAnimationDidStop];
         UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Submission Error" 
                                                         message:@"There was a problem submitting your comment" 
                                                        delegate:nil 
@@ -176,7 +176,7 @@
 {
 	switch (buttonIndex) {
 		case 0:
-			[super showAnimationDidStop];
+//			[super showAnimationDidStop];
 			break;
 		case 1:
 			if (TTIsStringWithAnyText(emailField.text) && TTIsStringWithAnyText(nameField.text))
@@ -190,7 +190,7 @@
 			}
 			else 
 			{
-				[super showAnimationDidStop];
+//				[super showAnimationDidStop];
 			}
 
 			break;
