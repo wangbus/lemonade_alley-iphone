@@ -12,8 +12,6 @@
 #import "WordPressBlogViewController.h"
 #import "WordPressAddCommentViewController.h"
 #import "TabBarController.h"
-#import "MenuController.h"
-#import "ContentController.h"
 @implementation LemonadeAlleyAppDelegate
 
 //@synthesize window = _window;
@@ -21,59 +19,21 @@
 //@synthesize splashScreen;
 
 - (void)applicationDidFinishLaunching:(UIApplication*)application {
-    // Override point for customization after application launch.
-    // Add the tab bar controller's current view as a subview of the window
-//    self.window.rootViewController = self.tabBarController;
-//    [self.window addSubview:self.tabBarController.view];
-    
-//    self.splashScreen.showsStatusBarOnDismissal = YES;
-//    self.splashScreen.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-
-//    self.tabBarController.delegate = self;
-//    [self.tabBarController presentModalViewController:splashScreen animated:NO];
-    
-    
     TTNavigator* navigator = [TTNavigator navigator];
     navigator.persistenceMode = TTNavigatorPersistenceModeAll;
     navigator.window = [[[UIWindow alloc] initWithFrame:TTScreenBounds()] autorelease];
     
 	TTURLMap* map = navigator.URLMap;
-	
 
     [map from:@"*" toViewController:[TTWebController class]];
     [map from:@"tt://tabBar" toSharedViewController:[TabBarController class]];
     [map from:@"tt://wp" toSharedViewController:[WordPressBlogViewController class]];
-    [map from:@"tt://menu/(initWithMenu:)" toSharedViewController:[MenuController class]];
-    
-    [map from:@"tt://food/(initWithFood:)" toViewController:[ContentController class]];
-    [map from:@"tt://about/(initWithAbout:)" parent:@"tt://menu/5"
-toViewController:[ContentController class] selector:nil transition:0];
-    
-    [map from:@"tt://food/(initWithNutrition:)/nutrition" toViewController:[ContentController class]
-   transition:UIViewAnimationTransitionFlipFromLeft];
-    
-    // The ordering controller will appear as a modal view controller, animated from bottom to top
-    [map from:@"tt://order?waitress=(initWithWaitress:)"
-toModalViewController:[ContentController class]];
-    
-    [map from:@"tt://order?waitress=()#(orderAction:)" toViewController:[ContentController class]];
-    
-    
-    [map from:@"tt://order/food" toViewController:[TTPostController class]];
-    
-    
-    [map from:@"tt://order/confirm" toViewController:self selector:@selector(confirmOrder)];
-    
-    
-    [map from:@"tt://order/send" toObject:self selector:@selector(sendOrder)];
-
 
     // Before opening the tab bar, we see if the controller history was persisted the last time
     if (![navigator restoreViewControllers]) {
         // This is the first launch, so we just start with the tab bar
         [navigator openURLAction:[TTURLAction actionWithURLPath:@"tt://tabBar"]];
     }
-//    [self.window makeKeyAndVisible];
 }
 
 - (BOOL)application:(UIApplication*)application handleOpenURL:(NSURL*)URL {
