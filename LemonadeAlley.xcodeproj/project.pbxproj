@@ -66,6 +66,7 @@
 		A3ACFCEA1421B32F0045D947 /* MenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ACFCE91421B32F0045D947 /* MenuController.m */; };
 		A3F2A1121418652F00DADAD0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F2A1111418652E00DADAD0 /* QuartzCore.framework */; };
 		A3F2A1A61418826600DADAD0 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F2A1A51418826600DADAD0 /* Photo.m */; };
+		A3F8E3C6143AB6750039904B /* libextThree20JSON+SBJSON.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F8E3C1143AB6580039904B /* libextThree20JSON+SBJSON.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -223,6 +224,27 @@
 			remoteGlobalIDString = EB9E6C6210B6A8F800DE563C;
 			remoteInfo = Three20UINavigatorUnitTests;
 		};
+		A3F8E3C0143AB6580039904B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3F8E3B4143AB6580039904B /* extThree20JSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BEF31F3A0F352DF5000DE5D2;
+			remoteInfo = "extThree20JSON+SBJSON";
+		};
+		A3F8E3C2143AB6580039904B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3F8E3B4143AB6580039904B /* extThree20JSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6E645BD91187751200F08CB1;
+			remoteInfo = "extThree20JSON+YAJL";
+		};
+		A3F8E3C4143AB6580039904B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3F8E3B4143AB6580039904B /* extThree20JSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EB9E6C6210B6A8F800DE563C;
+			remoteInfo = "extThree20JSONUnitTests+SBJSON";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -319,6 +341,7 @@
 		A3F2A1111418652E00DADAD0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A3F2A1A41418826600DADAD0 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
 		A3F2A1A51418826600DADAD0 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		A3F8E3B4143AB6580039904B /* extThree20JSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = extThree20JSON.xcodeproj; path = three20/src/extThree20JSON/extThree20JSON.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -326,6 +349,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3F8E3C6143AB6750039904B /* libextThree20JSON+SBJSON.a in Frameworks */,
 				3201088596B4756681693705 /* libThree20UICommon.a in Frameworks */,
 				320D7DCCE32703ACAB9A45E5 /* libThree20.a in Frameworks */,
 				320A737074758E53BA54BE95 /* libThree20UINavigator.a in Frameworks */,
@@ -440,6 +464,7 @@
 		A32D30251412EACB007C5873 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A3F8E3B4143AB6580039904B /* extThree20JSON.xcodeproj */,
 				3201088596B4756681693700 /* Three20UICommon.xcodeproj */,
 				320D7DCCE32703ACAB9A45E0 /* Three20.xcodeproj */,
 				320A737074758E53BA54BE90 /* Three20UINavigator.xcodeproj */,
@@ -613,6 +638,16 @@
 			name = Photo;
 			sourceTree = "<group>";
 		};
+		A3F8E3B5143AB6580039904B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3F8E3C1143AB6580039904B /* libextThree20JSON+SBJSON.a */,
+				A3F8E3C3143AB6580039904B /* libextThree20JSON+YAJL.a */,
+				A3F8E3C5143AB6580039904B /* extJSONUnitTests+SBJSON.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -675,6 +710,10 @@
 			productRefGroup = A32D30231412EACB007C5873 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = A3F8E3B5143AB6580039904B /* Products */;
+					ProjectRef = A3F8E3B4143AB6580039904B /* extThree20JSON.xcodeproj */;
+				},
 				{
 					ProductGroup = 320D7DCCE32703ACAB9A45E3 /* Products */;
 					ProjectRef = 320D7DCCE32703ACAB9A45E0 /* Three20.xcodeproj */;
@@ -809,6 +848,27 @@
 			fileType = wrapper.cfbundle;
 			path = UINavigatorUnitTests.octest;
 			remoteRef = A3F8E33F143AB1EB0039904B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A3F8E3C1143AB6580039904B /* libextThree20JSON+SBJSON.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libextThree20JSON+SBJSON.a";
+			remoteRef = A3F8E3C0143AB6580039904B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A3F8E3C3143AB6580039904B /* libextThree20JSON+YAJL.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libextThree20JSON+YAJL.a";
+			remoteRef = A3F8E3C2143AB6580039904B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A3F8E3C5143AB6580039904B /* extJSONUnitTests+SBJSON.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "extJSONUnitTests+SBJSON.octest";
+			remoteRef = A3F8E3C4143AB6580039904B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -990,6 +1050,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1020,6 +1081,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1043,9 +1105,15 @@
 		A32D30611412EACC007C5873 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LemonadeAlley/LemonadeAlley-Prefix.pch";
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(BUILT_PRODUCTS_DIR)/../three20",
+					"$(BUILT_PRODUCTS_DIR)/../../three20",
+					three20/Build/Products/three20,
+				);
 				INFOPLIST_FILE = "LemonadeAlley/LemonadeAlley-Info.plist";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1059,9 +1127,15 @@
 		A32D30621412EACC007C5873 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LemonadeAlley/LemonadeAlley-Prefix.pch";
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(BUILT_PRODUCTS_DIR)/../three20",
+					"$(BUILT_PRODUCTS_DIR)/../../three20",
+					three20/Build/Products/three20,
+				);
 				INFOPLIST_FILE = "LemonadeAlley/LemonadeAlley-Info.plist";
 				OTHER_LDFLAGS = (
 					"-ObjC",
