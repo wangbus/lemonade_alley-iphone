@@ -11,7 +11,9 @@
 #import "WPTabBarController.h"
 #import "WordPressBlogViewController.h"
 #import "WordPressAddCommentViewController.h"
+#import "WordpressPageViewController.h"
 #import "TabBarController.h"
+
 @implementation LemonadeAlleyAppDelegate
 
 - (void)applicationDidFinishLaunching:(UIApplication*)application {
@@ -24,7 +26,7 @@
   [map from:@"*" toViewController:[TTWebController class]];
   [map from:@"tt://tabBar" toSharedViewController:[TabBarController class]];
   [map from:@"tt://blog" toSharedViewController:[WordPressBlogViewController class]];
-  //  [map from:@"tt://about" toSharedViewController:[WordPressBlogViewController class]];
+  [map from:@"tt://about" toSharedViewController:[WordpressPageViewController class]];
   
   // Before opening the tab bar, we see if the controller history was persisted the last time
   if (![navigator restoreViewControllers]) {

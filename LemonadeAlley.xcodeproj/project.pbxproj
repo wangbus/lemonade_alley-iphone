@@ -51,6 +51,8 @@
 		A36B8C29141F47B2004857B6 /* default.css in Resources */ = {isa = PBXBuildFile; fileRef = A36B8C28141F47B2004857B6 /* default.css */; };
 		A37166D71418D1A300C9262A /* PhotoSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A37166D61418D1A300C9262A /* PhotoSet.m */; };
 		A3A428E51421B782008C9E0F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A3A428E41421B782008C9E0F /* Default.png */; };
+		A3A4A65B143DC7E3006C3F70 /* WordpressPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A4A659143DC7E3006C3F70 /* WordpressPageViewController.m */; };
+		A3A4A65C143DC7E3006C3F70 /* WordpressPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3A4A65A143DC7E3006C3F70 /* WordpressPageViewController.xib */; };
 		A3C6C2FB143DA2AF00FF57BB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3C6C2F6143DA2AF00FF57BB /* CFNetwork.framework */; };
 		A3C6C2FC143DA2AF00FF57BB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3C6C2F7143DA2AF00FF57BB /* CoreData.framework */; };
 		A3C6C2FD143DA2AF00FF57BB /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A3C6C2F8143DA2AF00FF57BB /* libxml2.dylib */; };
@@ -399,6 +401,9 @@
 		A37166D51418D1A300C9262A /* PhotoSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoSet.h; sourceTree = "<group>"; };
 		A37166D61418D1A300C9262A /* PhotoSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoSet.m; sourceTree = "<group>"; };
 		A3A428E41421B782008C9E0F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A3A4A658143DC7E3006C3F70 /* WordpressPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordpressPageViewController.h; sourceTree = "<group>"; };
+		A3A4A659143DC7E3006C3F70 /* WordpressPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordpressPageViewController.m; sourceTree = "<group>"; };
+		A3A4A65A143DC7E3006C3F70 /* WordpressPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WordpressPageViewController.xib; sourceTree = "<group>"; };
 		A3C6C2CA143DA1B200FF57BB /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
 		A3C6C2F6143DA2AF00FF57BB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		A3C6C2F7143DA2AF00FF57BB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -627,6 +632,9 @@
 			children = (
 				A3D1ADD4143ABA5C00840A12 /* TabBarController.h */,
 				A3D1ADD5143ABA5C00840A12 /* TabBarController.m */,
+				A3A4A658143DC7E3006C3F70 /* WordpressPageViewController.h */,
+				A3A4A659143DC7E3006C3F70 /* WordpressPageViewController.m */,
+				A3A4A65A143DC7E3006C3F70 /* WordpressPageViewController.xib */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -1049,6 +1057,7 @@
 				A36B8BA3141F4426004857B6 /* 18-envelope.png in Resources */,
 				A36B8C29141F47B2004857B6 /* default.css in Resources */,
 				A3A428E51421B782008C9E0F /* Default.png in Resources */,
+				A3A4A65C143DC7E3006C3F70 /* WordpressPageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1107,6 +1116,7 @@
 				A36B8C26141F4795004857B6 /* WordPressPostViewController.m in Sources */,
 				A36B8C27141F4795004857B6 /* WPTabBarController.m in Sources */,
 				A3D1ADD6143ABA5C00840A12 /* TabBarController.m in Sources */,
+				A3A4A65B143DC7E3006C3F70 /* WordpressPageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
