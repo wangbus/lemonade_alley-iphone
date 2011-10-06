@@ -7,6 +7,7 @@
 //
 
 #import <Three20/Three20.h>
+#import <Restkit/Restkit.h>
 
 int main(int argc, char *argv[])
 {
