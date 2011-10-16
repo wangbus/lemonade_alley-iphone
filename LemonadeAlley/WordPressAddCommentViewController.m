@@ -15,6 +15,7 @@
 #import "extThree20JSON/extThree20JSON.h"
 #import "extThree20JSON/NSObject+SBJSON.h"
 #import "GTMNSString+HTML.h"
+#import "extThree20JSON/TTURLJSONResponse.h"
 
 @implementation WordPressAddCommentViewController
 

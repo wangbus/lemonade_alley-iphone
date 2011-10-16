@@ -15,7 +15,7 @@
 
 #import "GTMNSString+HTML.h"
 
-#import "extThree20JSON/TTURLJSONResponse.h"
+#import "TTURLJSONResponse.h"
 #import "Three20Network/TTURLRequest.h"
 
 @implementation WordPressPostModel
