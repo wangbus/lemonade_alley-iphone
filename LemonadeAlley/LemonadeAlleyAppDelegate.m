@@ -6,38 +6,10 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "Three20/Three20.h"
 #import "LemonadeAlleyAppDelegate.h"
-#import "WPTabBarController.h"
-#import "WordPressBlogViewController.h"
-#import "WordPressAddCommentViewController.h"
-#import "WordpressPageViewController.h"
-#import "TabBarController.h"
-
 @implementation LemonadeAlleyAppDelegate
 
 - (void)applicationDidFinishLaunching:(UIApplication*)application {
-  // from entry-point
-  TTNavigator* navigator = [TTNavigator navigator];
-  navigator.persistenceMode = TTNavigatorPersistenceModeAll;
-  navigator.window = [[[UIWindow alloc] initWithFrame:TTScreenBounds()] autorelease];
-  
-	TTURLMap* map = navigator.URLMap;
-  [map from:@"*" toViewController:[TTWebController class]];
-  [map from:@"tt://tabBar" toSharedViewController:[TabBarController class]];
-  [map from:@"tt://blog" toSharedViewController:[WordPressBlogViewController class]];
-  [map from:@"tt://about" toSharedViewController:[WordpressPageViewController class]];
-  
-  // Before opening the tab bar, we see if the controller history was persisted the last time
-  if (![navigator restoreViewControllers]) {
-    // This is the first launch, so we just start with the tab bar
-    [navigator openURLAction:[TTURLAction actionWithURLPath:@"tt://tabBar"]];
-  }
-}
-
-- (BOOL)application:(UIApplication*)application handleOpenURL:(NSURL*)URL {
-  [[TTNavigator navigator] openURLAction:[TTURLAction actionWithURLPath:URL.absoluteString]];
-  return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -77,19 +49,6 @@
    Save data if appropriate.
    See also applicationDidEnterBackground:.
    */
-}
-
-- (UIViewController*)confirmOrder {
-  TTAlertViewController* alert = [[[TTAlertViewController alloc]
-                                   initWithTitle:@"Are you sure?"
-                                   message:@"Sure you want to order?"] autorelease];
-  [alert addButtonWithTitle:@"Yes" URL:@"tt://order/send"];
-  [alert addCancelButtonWithTitle:@"No" URL:nil];
-  return alert;
-}
-
-- (void)sendOrder {
-  TTDINFO(@"SENDING THE ORDER...");
 }
 
 - (void)dealloc
