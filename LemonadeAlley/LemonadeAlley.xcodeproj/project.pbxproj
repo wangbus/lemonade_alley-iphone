@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3D1306D144BD0E50019A696 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D1306B144BD0E50019A696 /* NewsViewController.m */; };
+		A3D1309C144BD3C90019A696 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D1309B144BD3C80019A696 /* CFNetwork.framework */; };
+		A3D1309E144BD3D90019A696 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D1309D144BD3D90019A696 /* MobileCoreServices.framework */; };
+		A3D130A0144BD3F60019A696 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D1309F144BD3F60019A696 /* SystemConfiguration.framework */; };
 		A3DB1211144B934B00DFC686 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3DB1210144B934B00DFC686 /* UIKit.framework */; };
 		A3DB1213144B934B00DFC686 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3DB1212144B934B00DFC686 /* Foundation.framework */; };
 		A3DB1215144B934B00DFC686 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3DB1214144B934B00DFC686 /* CoreGraphics.framework */; };
@@ -226,6 +230,7 @@
 		A3DB1433144B9E1A00DFC686 /* 97-puzzle.png in Resources */ = {isa = PBXBuildFile; fileRef = A3DB136A144B9E1A00DFC686 /* 97-puzzle.png */; };
 		A3DB1434144B9E1A00DFC686 /* 98-palette.png in Resources */ = {isa = PBXBuildFile; fileRef = A3DB136B144B9E1A00DFC686 /* 98-palette.png */; };
 		A3DB1435144B9E1A00DFC686 /* 99-umbrella.png in Resources */ = {isa = PBXBuildFile; fileRef = A3DB136C144B9E1A00DFC686 /* 99-umbrella.png */; };
+		A3E485F5144BD9B1001FDD13 /* WordpressAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E485F4144BD9B1001FDD13 /* WordpressAgent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -239,6 +244,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A3D1306A144BD0E50019A696 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		A3D1306B144BD0E50019A696 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		A3D1309B144BD3C80019A696 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A3D1309D144BD3D90019A696 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A3D1309F144BD3F60019A696 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A3DB120C144B934B00DFC686 /* LemonadeAlley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LemonadeAlley.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3DB1210144B934B00DFC686 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A3DB1212144B934B00DFC686 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -464,6 +474,8 @@
 		A3DB136A144B9E1A00DFC686 /* 97-puzzle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "97-puzzle.png"; sourceTree = "<group>"; };
 		A3DB136B144B9E1A00DFC686 /* 98-palette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "98-palette.png"; sourceTree = "<group>"; };
 		A3DB136C144B9E1A00DFC686 /* 99-umbrella.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "99-umbrella.png"; sourceTree = "<group>"; };
+		A3E485F3144BD9B1001FDD13 /* WordpressAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WordpressAgent.h; path = models/WordpressAgent.h; sourceTree = "<group>"; };
+		A3E485F4144BD9B1001FDD13 /* WordpressAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WordpressAgent.m; path = models/WordpressAgent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -471,6 +483,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3D130A0144BD3F60019A696 /* SystemConfiguration.framework in Frameworks */,
+				A3D1309E144BD3D90019A696 /* MobileCoreServices.framework in Frameworks */,
+				A3D1309C144BD3C90019A696 /* CFNetwork.framework in Frameworks */,
 				A3DB1211144B934B00DFC686 /* UIKit.framework in Frameworks */,
 				A3DB1213144B934B00DFC686 /* Foundation.framework in Frameworks */,
 				A3DB1215144B934B00DFC686 /* CoreGraphics.framework in Frameworks */,
@@ -495,6 +510,9 @@
 		A3DB1201144B934B00DFC686 = {
 			isa = PBXGroup;
 			children = (
+				A3D1309F144BD3F60019A696 /* SystemConfiguration.framework */,
+				A3D1309D144BD3D90019A696 /* MobileCoreServices.framework */,
+				A3D1309B144BD3C80019A696 /* CFNetwork.framework */,
 				A3DB1218144B934B00DFC686 /* LemonadeAlley */,
 				A3DB12A3144B9E1900DFC686 /* Icons */,
 				A3DB1240144B934C00DFC686 /* LemonadeAlleyTests */,
@@ -527,6 +545,7 @@
 		A3DB1218144B934B00DFC686 /* LemonadeAlley */ = {
 			isa = PBXGroup;
 			children = (
+				A3E485F2144BD907001FDD13 /* Models */,
 				A3DB1221144B934B00DFC686 /* AppDelegate.h */,
 				A3DB1222144B934B00DFC686 /* AppDelegate.m */,
 				A3DB1224144B934B00DFC686 /* MainStoryboard_iPhone.storyboard */,
@@ -535,6 +554,8 @@
 				A3DB122E144B934C00DFC686 /* MasterViewController.m */,
 				A3DB1230144B934C00DFC686 /* DetailViewController.h */,
 				A3DB1231144B934C00DFC686 /* DetailViewController.m */,
+				A3D1306A144BD0E50019A696 /* NewsViewController.h */,
+				A3D1306B144BD0E50019A696 /* NewsViewController.m */,
 				A3DB122A144B934C00DFC686 /* LemonadeAlley.xcdatamodeld */,
 				A3DB1219144B934B00DFC686 /* Supporting Files */,
 			);
@@ -778,6 +799,15 @@
 			);
 			name = Icons;
 			path = LemonadeAlley/icons;
+			sourceTree = "<group>";
+		};
+		A3E485F2144BD907001FDD13 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A3E485F3144BD9B1001FDD13 /* WordpressAgent.h */,
+				A3E485F4144BD9B1001FDD13 /* WordpressAgent.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1093,6 +1123,8 @@
 				A3DB122C144B934C00DFC686 /* LemonadeAlley.xcdatamodeld in Sources */,
 				A3DB122F144B934C00DFC686 /* MasterViewController.m in Sources */,
 				A3DB1232144B934C00DFC686 /* DetailViewController.m in Sources */,
+				A3D1306D144BD0E50019A696 /* NewsViewController.m in Sources */,
+				A3E485F5144BD9B1001FDD13 /* WordpressAgent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1200,9 +1232,14 @@
 		A3DB124C144B934C00DFC686 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LemonadeAlley/LemonadeAlley-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "LemonadeAlley/LemonadeAlley-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1211,9 +1248,14 @@
 		A3DB124D144B934C00DFC686 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LemonadeAlley/LemonadeAlley-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "LemonadeAlley/LemonadeAlley-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1272,6 +1314,7 @@
 				A3DB124D144B934C00DFC686 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A3DB124E144B934C00DFC686 /* Build configuration list for PBXNativeTarget "LemonadeAlleyTests" */ = {
 			isa = XCConfigurationList;
@@ -1280,6 +1323,7 @@
 				A3DB1250144B934C00DFC686 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
