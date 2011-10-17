@@ -8,9 +8,11 @@
 
 #import "NewsViewController.h"
 #import "WordpressAgent.h"
+#import "PostViewController.h"
 
 @implementation NewsViewController
 @synthesize wordpressAgent;
+@synthesize HUD;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -31,10 +33,17 @@
 
 #pragma mark - View lifecycle
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad{
   [super viewDidLoad];
+  self.title = @"News";
   wordpressAgent = [[WordpressAgent alloc] init];
+  HUD = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
+  HUD.labelText = @"Loading";
+  [self.navigationController.view addSubview:HUD];
+  [HUD show:YES];
+  
+  //  [spinner startAnimating];
+  
   // Uncomment the following line to preserve selection between presentations.
   // self.clearsSelectionOnViewWillAppear = NO;
   
@@ -160,6 +169,34 @@
   if ([[notification name] isEqualToString:@"NewsUpdateNotification"]) {
     NSLog (@"Successfully received the Data Update notification!");
     [[self tableView] reloadData];
+    [HUD hide:YES];
+  }
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+  NSLog(@"prepareForSegue");
+  NSLog(@"%@", segue.identifier);
+  
+  if ([[segue identifier] isEqualToString:@"showDetail"]) {
+    NSLog(@"ShowDetails from prepareforsegue");
+    NSInteger row = [[self.tableView indexPathForSelectedRow] row];
+    NSDictionary *post = [wordpressAgent.posts objectAtIndex:row];
+    
+    // [segue destinationViewController] is read-only, so in order to
+    // write to that view controller you'll have to locally instantiate
+    // it here:
+    PostViewController *detailViewController = [segue destinationViewController];
+    detailViewController.post = post;
+    
+    // You now have a solid reference to the upcoming / destination view
+    // controller. Example use: Allocate and initialize some property of
+    // the destination view controller before you reach it and inject a
+    // reference to the current view controller into the upcoming one:
+//    upcomingViewController.someProperty = [[SomePropertyClass alloc] initWithString:@"Whatever!"];
+//    upcomingViewController. = [segue sourceViewController];
+    
+    // Or, equivalent, but more straightforward:
+    //upcomingViewController.initialViewController = self;
   }
 }
 

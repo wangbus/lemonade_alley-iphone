@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "WordpressAgent.h"
+#import "MBProgressHUD.h"
 
 @interface NewsViewController : UITableViewController
 
 @property (strong, nonatomic) WordpressAgent *wordpressAgent;
+@property (strong, nonatomic) MBProgressHUD *HUD;
 
 @end

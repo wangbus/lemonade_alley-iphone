@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A342AA7A144C4A4E0051DAC3 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A342AA79144C4A4E0051DAC3 /* MBProgressHUD.m */; };
+		A342AA7D144C4AE10051DAC3 /* WordpressAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = A342AA7C144C4AE10051DAC3 /* WordpressAgent.m */; };
 		A3D1306D144BD0E50019A696 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D1306B144BD0E50019A696 /* NewsViewController.m */; };
 		A3D1309C144BD3C90019A696 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D1309B144BD3C80019A696 /* CFNetwork.framework */; };
 		A3D1309E144BD3D90019A696 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D1309D144BD3D90019A696 /* MobileCoreServices.framework */; };
@@ -21,8 +23,7 @@
 		A3DB1226144B934B00DFC686 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3DB1224144B934B00DFC686 /* MainStoryboard_iPhone.storyboard */; };
 		A3DB1229144B934C00DFC686 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3DB1227144B934C00DFC686 /* MainStoryboard_iPad.storyboard */; };
 		A3DB122C144B934C00DFC686 /* LemonadeAlley.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3DB122A144B934C00DFC686 /* LemonadeAlley.xcdatamodeld */; };
-		A3DB122F144B934C00DFC686 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DB122E144B934C00DFC686 /* MasterViewController.m */; };
-		A3DB1232144B934C00DFC686 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DB1231144B934C00DFC686 /* DetailViewController.m */; };
+		A3DB1232144B934C00DFC686 /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DB1231144B934C00DFC686 /* PostViewController.m */; };
 		A3DB123A144B934C00DFC686 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3DB1239144B934C00DFC686 /* SenTestingKit.framework */; };
 		A3DB123B144B934C00DFC686 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3DB1210144B934B00DFC686 /* UIKit.framework */; };
 		A3DB123C144B934C00DFC686 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3DB1212144B934B00DFC686 /* Foundation.framework */; };
@@ -230,7 +231,6 @@
 		A3DB1433144B9E1A00DFC686 /* 97-puzzle.png in Resources */ = {isa = PBXBuildFile; fileRef = A3DB136A144B9E1A00DFC686 /* 97-puzzle.png */; };
 		A3DB1434144B9E1A00DFC686 /* 98-palette.png in Resources */ = {isa = PBXBuildFile; fileRef = A3DB136B144B9E1A00DFC686 /* 98-palette.png */; };
 		A3DB1435144B9E1A00DFC686 /* 99-umbrella.png in Resources */ = {isa = PBXBuildFile; fileRef = A3DB136C144B9E1A00DFC686 /* 99-umbrella.png */; };
-		A3E485F5144BD9B1001FDD13 /* WordpressAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E485F4144BD9B1001FDD13 /* WordpressAgent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -244,6 +244,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A342AA78144C4A4E0051DAC3 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = vendor/MBProgressHUD.h; sourceTree = "<group>"; };
+		A342AA79144C4A4E0051DAC3 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = vendor/MBProgressHUD.m; sourceTree = "<group>"; };
+		A342AA7B144C4AE10051DAC3 /* WordpressAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WordpressAgent.h; path = models/WordpressAgent.h; sourceTree = "<group>"; };
+		A342AA7C144C4AE10051DAC3 /* WordpressAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WordpressAgent.m; path = models/WordpressAgent.m; sourceTree = "<group>"; };
 		A3D1306A144BD0E50019A696 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
 		A3D1306B144BD0E50019A696 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
 		A3D1309B144BD3C80019A696 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -263,10 +267,8 @@
 		A3DB1225144B934B00DFC686 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		A3DB1228144B934C00DFC686 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		A3DB122B144B934C00DFC686 /* LemonadeAlley.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LemonadeAlley.xcdatamodel; sourceTree = "<group>"; };
-		A3DB122D144B934C00DFC686 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		A3DB122E144B934C00DFC686 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		A3DB1230144B934C00DFC686 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		A3DB1231144B934C00DFC686 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		A3DB1230144B934C00DFC686 /* PostViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostViewController.h; sourceTree = "<group>"; };
+		A3DB1231144B934C00DFC686 /* PostViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostViewController.m; sourceTree = "<group>"; };
 		A3DB1238144B934C00DFC686 /* LemonadeAlleyTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LemonadeAlleyTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3DB1239144B934C00DFC686 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		A3DB1242144B934C00DFC686 /* LemonadeAlleyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LemonadeAlleyTests-Info.plist"; sourceTree = "<group>"; };
@@ -474,8 +476,6 @@
 		A3DB136A144B9E1A00DFC686 /* 97-puzzle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "97-puzzle.png"; sourceTree = "<group>"; };
 		A3DB136B144B9E1A00DFC686 /* 98-palette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "98-palette.png"; sourceTree = "<group>"; };
 		A3DB136C144B9E1A00DFC686 /* 99-umbrella.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "99-umbrella.png"; sourceTree = "<group>"; };
-		A3E485F3144BD9B1001FDD13 /* WordpressAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WordpressAgent.h; path = models/WordpressAgent.h; sourceTree = "<group>"; };
-		A3E485F4144BD9B1001FDD13 /* WordpressAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WordpressAgent.m; path = models/WordpressAgent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -507,6 +507,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A342AA77144C4A1E0051DAC3 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				A342AA78144C4A4E0051DAC3 /* MBProgressHUD.h */,
+				A342AA79144C4A4E0051DAC3 /* MBProgressHUD.m */,
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
 		A3DB1201144B934B00DFC686 = {
 			isa = PBXGroup;
 			children = (
@@ -545,15 +554,14 @@
 		A3DB1218144B934B00DFC686 /* LemonadeAlley */ = {
 			isa = PBXGroup;
 			children = (
+				A342AA77144C4A1E0051DAC3 /* New Group */,
 				A3E485F2144BD907001FDD13 /* Models */,
 				A3DB1221144B934B00DFC686 /* AppDelegate.h */,
 				A3DB1222144B934B00DFC686 /* AppDelegate.m */,
 				A3DB1224144B934B00DFC686 /* MainStoryboard_iPhone.storyboard */,
 				A3DB1227144B934C00DFC686 /* MainStoryboard_iPad.storyboard */,
-				A3DB122D144B934C00DFC686 /* MasterViewController.h */,
-				A3DB122E144B934C00DFC686 /* MasterViewController.m */,
-				A3DB1230144B934C00DFC686 /* DetailViewController.h */,
-				A3DB1231144B934C00DFC686 /* DetailViewController.m */,
+				A3DB1230144B934C00DFC686 /* PostViewController.h */,
+				A3DB1231144B934C00DFC686 /* PostViewController.m */,
 				A3D1306A144BD0E50019A696 /* NewsViewController.h */,
 				A3D1306B144BD0E50019A696 /* NewsViewController.m */,
 				A3DB122A144B934C00DFC686 /* LemonadeAlley.xcdatamodeld */,
@@ -804,8 +812,8 @@
 		A3E485F2144BD907001FDD13 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A3E485F3144BD9B1001FDD13 /* WordpressAgent.h */,
-				A3E485F4144BD9B1001FDD13 /* WordpressAgent.m */,
+				A342AA7B144C4AE10051DAC3 /* WordpressAgent.h */,
+				A342AA7C144C4AE10051DAC3 /* WordpressAgent.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -1121,10 +1129,10 @@
 				A3DB121F144B934B00DFC686 /* main.m in Sources */,
 				A3DB1223144B934B00DFC686 /* AppDelegate.m in Sources */,
 				A3DB122C144B934C00DFC686 /* LemonadeAlley.xcdatamodeld in Sources */,
-				A3DB122F144B934C00DFC686 /* MasterViewController.m in Sources */,
-				A3DB1232144B934C00DFC686 /* DetailViewController.m in Sources */,
+				A3DB1232144B934C00DFC686 /* PostViewController.m in Sources */,
 				A3D1306D144BD0E50019A696 /* NewsViewController.m in Sources */,
-				A3E485F5144BD9B1001FDD13 /* WordpressAgent.m in Sources */,
+				A342AA7A144C4A4E0051DAC3 /* MBProgressHUD.m in Sources */,
+				A342AA7D144C4AE10051DAC3 /* WordpressAgent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
