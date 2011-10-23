@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3111B61145432C7001019E7 /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3111B60145432C7001019E7 /* PageViewController.m */; };
 		A342AA7A144C4A4E0051DAC3 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A342AA79144C4A4E0051DAC3 /* MBProgressHUD.m */; };
 		A342AA7D144C4AE10051DAC3 /* WordpressPostAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = A342AA7C144C4AE10051DAC3 /* WordpressPostAgent.m */; };
 		A35145D61453AA9900A10826 /* WordpressPageAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = A35145D51453AA9900A10826 /* WordpressPageAgent.m */; };
-		A35145D91453B0DB00A10826 /* PagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A35145D81453B0DB00A10826 /* PagesViewController.m */; };
+		A35145D91453B0DB00A10826 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A35145D81453B0DB00A10826 /* AboutViewController.m */; };
 		A3D1306D144BD0E50019A696 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D1306B144BD0E50019A696 /* NewsViewController.m */; };
 		A3D1309C144BD3C90019A696 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D1309B144BD3C80019A696 /* CFNetwork.framework */; };
 		A3D1309E144BD3D90019A696 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D1309D144BD3D90019A696 /* MobileCoreServices.framework */; };
@@ -246,14 +247,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A3111B5F145432C7001019E7 /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
+		A3111B60145432C7001019E7 /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
 		A342AA78144C4A4E0051DAC3 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = vendor/MBProgressHUD.h; sourceTree = "<group>"; };
 		A342AA79144C4A4E0051DAC3 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = vendor/MBProgressHUD.m; sourceTree = "<group>"; };
 		A342AA7B144C4AE10051DAC3 /* WordpressPostAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WordpressPostAgent.h; path = models/WordpressPostAgent.h; sourceTree = "<group>"; };
 		A342AA7C144C4AE10051DAC3 /* WordpressPostAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WordpressPostAgent.m; path = models/WordpressPostAgent.m; sourceTree = "<group>"; };
 		A35145D41453AA9900A10826 /* WordpressPageAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordpressPageAgent.h; sourceTree = "<group>"; };
 		A35145D51453AA9900A10826 /* WordpressPageAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordpressPageAgent.m; sourceTree = "<group>"; };
-		A35145D71453B0DB00A10826 /* PagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagesViewController.h; sourceTree = "<group>"; };
-		A35145D81453B0DB00A10826 /* PagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagesViewController.m; sourceTree = "<group>"; };
+		A35145D71453B0DB00A10826 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		A35145D81453B0DB00A10826 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		A3D1306A144BD0E50019A696 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
 		A3D1306B144BD0E50019A696 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
 		A3D1309B144BD3C80019A696 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -566,12 +569,14 @@
 				A3DB1222144B934B00DFC686 /* AppDelegate.m */,
 				A3DB1224144B934B00DFC686 /* MainStoryboard_iPhone.storyboard */,
 				A3DB1227144B934C00DFC686 /* MainStoryboard_iPad.storyboard */,
-				A3DB1230144B934C00DFC686 /* PostViewController.h */,
-				A3DB1231144B934C00DFC686 /* PostViewController.m */,
 				A3D1306A144BD0E50019A696 /* NewsViewController.h */,
 				A3D1306B144BD0E50019A696 /* NewsViewController.m */,
-				A35145D71453B0DB00A10826 /* PagesViewController.h */,
-				A35145D81453B0DB00A10826 /* PagesViewController.m */,
+				A3DB1230144B934C00DFC686 /* PostViewController.h */,
+				A3DB1231144B934C00DFC686 /* PostViewController.m */,
+				A35145D71453B0DB00A10826 /* AboutViewController.h */,
+				A35145D81453B0DB00A10826 /* AboutViewController.m */,
+				A3111B5F145432C7001019E7 /* PageViewController.h */,
+				A3111B60145432C7001019E7 /* PageViewController.m */,
 				A3DB122A144B934C00DFC686 /* LemonadeAlley.xcdatamodeld */,
 				A3DB1219144B934B00DFC686 /* Supporting Files */,
 			);
@@ -1144,7 +1149,8 @@
 				A342AA7A144C4A4E0051DAC3 /* MBProgressHUD.m in Sources */,
 				A342AA7D144C4AE10051DAC3 /* WordpressPostAgent.m in Sources */,
 				A35145D61453AA9900A10826 /* WordpressPageAgent.m in Sources */,
-				A35145D91453B0DB00A10826 /* PagesViewController.m in Sources */,
+				A35145D91453B0DB00A10826 /* AboutViewController.m in Sources */,
+				A3111B61145432C7001019E7 /* PageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

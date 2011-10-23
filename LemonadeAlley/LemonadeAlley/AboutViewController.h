@@ -10,7 +10,7 @@
 #import "WordpressPageAgent.h"
 #import "MBProgressHUD.h"
 
-@interface PagesViewController : UITableViewController
+@interface AboutViewController : UITableViewController
 
 @property (strong, nonatomic) WordpressPageAgent *wordpressPageAgent;
 @property (strong, nonatomic) MBProgressHUD *HUD;

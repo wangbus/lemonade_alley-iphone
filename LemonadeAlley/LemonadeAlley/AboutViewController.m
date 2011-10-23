@@ -1,14 +1,7 @@
-//
-//  PagesViewController.m
-//  LemonadeAlley
-//
-//  Created by James Wang on 10/22/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
-//
+#import "AboutViewController.h"
+#import "PageViewController.h"
 
-#import "PagesViewController.h"
-
-@implementation PagesViewController
+@implementation AboutViewController
 @synthesize wordpressPageAgent;
 @synthesize HUD;
 
@@ -32,6 +25,7 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   wordpressPageAgent = [[WordpressPageAgent alloc] init];
+  self.parentViewController.title  = @"About";
   // Uncomment the following line to preserve selection between presentations.
   // self.clearsSelectionOnViewWillAppear = NO;
   
@@ -144,11 +138,10 @@
 
 #pragma mark - Table view delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
   // Navigation logic may go here. Create and push another view controller.
   /*
-   <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+   DetailViewController *detailViewController = [[DetailViewController alloc] initWithNibName:@"Nib name" bundle:nil];
    // ...
    // Pass the selected object to the new view controller.
    [self.navigationController pushViewController:detailViewController animated:YES];
@@ -162,5 +155,32 @@
     [HUD hide:YES];
   }
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+  NSLog(@"Segue identifier: %@", segue.identifier);
+  
+  if ([[segue identifier] isEqualToString:@"showPage"]) {
+    NSLog(@"ShowDetails from prepareforsegue");
+    NSInteger row = [[self.tableView indexPathForSelectedRow] row];
+    NSDictionary *page = [wordpressPageAgent.pages objectAtIndex:row];
+    
+    // [segue destinationViewController] is read-only, so in order to
+    // write to that view controller you'll have to locally instantiate
+    // it here:
+    PageViewController *detailViewController = [segue destinationViewController];
+    detailViewController.page = page;
+    
+    // You now have a solid reference to the upcoming / destination view
+    // controller. Example use: Allocate and initialize some property of
+    // the destination view controller before you reach it and inject a
+    // reference to the current view controller into the upcoming one:
+    //    upcomingViewController.someProperty = [[SomePropertyClass alloc] initWithString:@"Whatever!"];
+    //    upcomingViewController. = [segue sourceViewController];
+    
+    // Or, equivalent, but more straightforward:
+    //upcomingViewController.initialViewController = self;
+  }
+}
+
 
 @end

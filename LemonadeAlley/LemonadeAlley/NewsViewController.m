@@ -1,11 +1,3 @@
-//
-//  NewsViewController.m
-//  LemonadeAlley
-//
-//  Created by Jian Shi Wang on 10/16/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
-//
-
 #import "NewsViewController.h"
 #import "WordpressPostAgent.h"
 #import "PostViewController.h"
@@ -14,8 +6,7 @@
 @synthesize wordpressPostAgent;
 @synthesize HUD;
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
+- (id)initWithStyle:(UITableViewStyle)style {
   self = [super initWithStyle:style];
   if (self) {
     // Custom initialization
@@ -23,8 +14,7 @@
   return self;
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
   // Releases the view if it doesn't have a superview.
   [super didReceiveMemoryWarning];
   
@@ -33,7 +23,7 @@
 
 #pragma mark - View lifecycle
 
-- (void)viewDidLoad{
+- (void)viewDidLoad {
   [super viewDidLoad];
   self.title = @"News";
   wordpressPostAgent = [[WordpressPostAgent alloc] init];
@@ -51,9 +41,9 @@
   // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void)viewDidUnload
-{
+- (void)viewDidUnload {
   [super viewDidUnload];
+    self.parentViewController.title  = @"About";
   // Release any retained subviews of the main view.
   // e.g. self.myOutlet = nil;
 }
@@ -192,8 +182,8 @@
     // controller. Example use: Allocate and initialize some property of
     // the destination view controller before you reach it and inject a
     // reference to the current view controller into the upcoming one:
-//    upcomingViewController.someProperty = [[SomePropertyClass alloc] initWithString:@"Whatever!"];
-//    upcomingViewController. = [segue sourceViewController];
+    //    upcomingViewController.someProperty = [[SomePropertyClass alloc] initWithString:@"Whatever!"];
+    //    upcomingViewController. = [segue sourceViewController];
     
     // Or, equivalent, but more straightforward:
     //upcomingViewController.initialViewController = self;
