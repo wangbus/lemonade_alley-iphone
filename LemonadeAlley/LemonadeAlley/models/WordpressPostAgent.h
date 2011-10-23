@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface WordpressAgent : NSObject <NSURLConnectionDelegate>
+@interface WordpressPostAgent : NSObject <NSURLConnectionDelegate>
 
 @property (strong, nonatomic) NSMutableData *responseData;
 @property (strong, nonatomic) NSDictionary *response;

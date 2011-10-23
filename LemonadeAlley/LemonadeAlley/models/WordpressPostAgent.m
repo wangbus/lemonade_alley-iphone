@@ -6,9 +6,9 @@
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "WordpressAgent.h"
+#import "WordpressPostAgent.h"
 
-@implementation WordpressAgent
+@implementation WordpressPostAgent
 
 @synthesize responseData;
 @synthesize response;

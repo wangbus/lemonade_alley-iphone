@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A342AA7A144C4A4E0051DAC3 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A342AA79144C4A4E0051DAC3 /* MBProgressHUD.m */; };
-		A342AA7D144C4AE10051DAC3 /* WordpressAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = A342AA7C144C4AE10051DAC3 /* WordpressAgent.m */; };
+		A342AA7D144C4AE10051DAC3 /* WordpressPostAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = A342AA7C144C4AE10051DAC3 /* WordpressPostAgent.m */; };
+		A35145D61453AA9900A10826 /* WordpressPageAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = A35145D51453AA9900A10826 /* WordpressPageAgent.m */; };
+		A35145D91453B0DB00A10826 /* PagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A35145D81453B0DB00A10826 /* PagesViewController.m */; };
 		A3D1306D144BD0E50019A696 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D1306B144BD0E50019A696 /* NewsViewController.m */; };
 		A3D1309C144BD3C90019A696 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D1309B144BD3C80019A696 /* CFNetwork.framework */; };
 		A3D1309E144BD3D90019A696 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D1309D144BD3D90019A696 /* MobileCoreServices.framework */; };
@@ -246,8 +248,12 @@
 /* Begin PBXFileReference section */
 		A342AA78144C4A4E0051DAC3 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = vendor/MBProgressHUD.h; sourceTree = "<group>"; };
 		A342AA79144C4A4E0051DAC3 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = vendor/MBProgressHUD.m; sourceTree = "<group>"; };
-		A342AA7B144C4AE10051DAC3 /* WordpressAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WordpressAgent.h; path = models/WordpressAgent.h; sourceTree = "<group>"; };
-		A342AA7C144C4AE10051DAC3 /* WordpressAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WordpressAgent.m; path = models/WordpressAgent.m; sourceTree = "<group>"; };
+		A342AA7B144C4AE10051DAC3 /* WordpressPostAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WordpressPostAgent.h; path = models/WordpressPostAgent.h; sourceTree = "<group>"; };
+		A342AA7C144C4AE10051DAC3 /* WordpressPostAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WordpressPostAgent.m; path = models/WordpressPostAgent.m; sourceTree = "<group>"; };
+		A35145D41453AA9900A10826 /* WordpressPageAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordpressPageAgent.h; sourceTree = "<group>"; };
+		A35145D51453AA9900A10826 /* WordpressPageAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordpressPageAgent.m; sourceTree = "<group>"; };
+		A35145D71453B0DB00A10826 /* PagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagesViewController.h; sourceTree = "<group>"; };
+		A35145D81453B0DB00A10826 /* PagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagesViewController.m; sourceTree = "<group>"; };
 		A3D1306A144BD0E50019A696 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
 		A3D1306B144BD0E50019A696 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
 		A3D1309B144BD3C80019A696 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -507,13 +513,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A342AA77144C4A1E0051DAC3 /* New Group */ = {
+		A342AA77144C4A1E0051DAC3 /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
 				A342AA78144C4A4E0051DAC3 /* MBProgressHUD.h */,
 				A342AA79144C4A4E0051DAC3 /* MBProgressHUD.m */,
 			);
-			name = "New Group";
+			name = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 		A3DB1201144B934B00DFC686 = {
@@ -554,7 +560,7 @@
 		A3DB1218144B934B00DFC686 /* LemonadeAlley */ = {
 			isa = PBXGroup;
 			children = (
-				A342AA77144C4A1E0051DAC3 /* New Group */,
+				A342AA77144C4A1E0051DAC3 /* MBProgressHUD */,
 				A3E485F2144BD907001FDD13 /* Models */,
 				A3DB1221144B934B00DFC686 /* AppDelegate.h */,
 				A3DB1222144B934B00DFC686 /* AppDelegate.m */,
@@ -564,6 +570,8 @@
 				A3DB1231144B934C00DFC686 /* PostViewController.m */,
 				A3D1306A144BD0E50019A696 /* NewsViewController.h */,
 				A3D1306B144BD0E50019A696 /* NewsViewController.m */,
+				A35145D71453B0DB00A10826 /* PagesViewController.h */,
+				A35145D81453B0DB00A10826 /* PagesViewController.m */,
 				A3DB122A144B934C00DFC686 /* LemonadeAlley.xcdatamodeld */,
 				A3DB1219144B934B00DFC686 /* Supporting Files */,
 			);
@@ -812,8 +820,10 @@
 		A3E485F2144BD907001FDD13 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A342AA7B144C4AE10051DAC3 /* WordpressAgent.h */,
-				A342AA7C144C4AE10051DAC3 /* WordpressAgent.m */,
+				A342AA7B144C4AE10051DAC3 /* WordpressPostAgent.h */,
+				A342AA7C144C4AE10051DAC3 /* WordpressPostAgent.m */,
+				A35145D41453AA9900A10826 /* WordpressPageAgent.h */,
+				A35145D51453AA9900A10826 /* WordpressPageAgent.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -1132,7 +1142,9 @@
 				A3DB1232144B934C00DFC686 /* PostViewController.m in Sources */,
 				A3D1306D144BD0E50019A696 /* NewsViewController.m in Sources */,
 				A342AA7A144C4A4E0051DAC3 /* MBProgressHUD.m in Sources */,
-				A342AA7D144C4AE10051DAC3 /* WordpressAgent.m in Sources */,
+				A342AA7D144C4AE10051DAC3 /* WordpressPostAgent.m in Sources */,
+				A35145D61453AA9900A10826 /* WordpressPageAgent.m in Sources */,
+				A35145D91453B0DB00A10826 /* PagesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1240,8 +1252,8 @@
 		A3DB124C144B934C00DFC686 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jian Shi WANG (M7SG4N2CX7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jian Shi WANG (M7SG4N2CX7)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LemonadeAlley/LemonadeAlley-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -1249,6 +1261,8 @@
 				INFOPLIST_FILE = "LemonadeAlley/LemonadeAlley-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5215CD0E-7CB8-4556-8D0B-F78BC6A77B3D";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5215CD0E-7CB8-4556-8D0B-F78BC6A77B3D";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1256,8 +1270,8 @@
 		A3DB124D144B934C00DFC686 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jian Shi WANG (M7SG4N2CX7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jian Shi WANG (M7SG4N2CX7)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LemonadeAlley/LemonadeAlley-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -1265,6 +1279,8 @@
 				INFOPLIST_FILE = "LemonadeAlley/LemonadeAlley-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5215CD0E-7CB8-4556-8D0B-F78BC6A77B3D";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5215CD0E-7CB8-4556-8D0B-F78BC6A77B3D";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

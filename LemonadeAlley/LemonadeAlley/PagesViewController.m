@@ -1,21 +1,18 @@
 //
-//  NewsViewController.m
+//  PagesViewController.m
 //  LemonadeAlley
 //
-//  Created by Jian Shi Wang on 10/16/11.
+//  Created by James Wang on 10/22/11.
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "NewsViewController.h"
-#import "WordpressPostAgent.h"
-#import "PostViewController.h"
+#import "PagesViewController.h"
 
-@implementation NewsViewController
-@synthesize wordpressPostAgent;
+@implementation PagesViewController
+@synthesize wordpressPageAgent;
 @synthesize HUD;
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
+- (id)initWithStyle:(UITableViewStyle)style {
   self = [super initWithStyle:style];
   if (self) {
     // Custom initialization
@@ -23,8 +20,7 @@
   return self;
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
   // Releases the view if it doesn't have a superview.
   [super didReceiveMemoryWarning];
   
@@ -33,17 +29,9 @@
 
 #pragma mark - View lifecycle
 
-- (void)viewDidLoad{
+- (void)viewDidLoad {
   [super viewDidLoad];
-  self.title = @"News";
-  wordpressPostAgent = [[WordpressPostAgent alloc] init];
-  HUD = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
-  HUD.labelText = @"Loading";
-  [self.navigationController.view addSubview:HUD];
-  [HUD show:YES];
-  
-  //  [spinner startAnimating];
-  
+  wordpressPageAgent = [[WordpressPageAgent alloc] init];
   // Uncomment the following line to preserve selection between presentations.
   // self.clearsSelectionOnViewWillAppear = NO;
   
@@ -61,7 +49,7 @@
 - (void)viewWillAppear:(BOOL)animated {
   [[NSNotificationCenter defaultCenter] addObserver:self
                                            selector:@selector(receiveDataNotification:) 
-                                               name:@"NewsUpdateNotification"
+                                               name:@"PagesUpdateNotification"
                                              object:nil];
   [super viewWillAppear:animated];
 }
@@ -94,7 +82,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-  return [[wordpressPostAgent posts] count];
+  return [[wordpressPageAgent pages] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -105,13 +93,15 @@
     cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
   }
   NSUInteger row = [indexPath row];
-  NSDictionary *post = [[wordpressPostAgent posts] objectAtIndex:row];
+  NSDictionary *page = [[wordpressPageAgent pages] objectAtIndex:row];
   
+  NSLog(@"Page: %@", page);
   // Configure the cell...
-  cell.textLabel.text = [post objectForKey:@"title"];
-  cell.detailTextLabel.text = [post objectForKey:@"modified"];
+  cell.textLabel.text = [page objectForKey:@"name"];
+  cell.detailTextLabel.text = [page objectForKey:@"url"];
   return cell;
 }
+
 
 /*
  // Override to support conditional editing of the table view.
@@ -166,37 +156,10 @@
 }
 
 - (void) receiveDataNotification:(NSNotification *) notification {
-  if ([[notification name] isEqualToString:@"NewsUpdateNotification"]) {
+  if ([[notification name] isEqualToString:@"PagesUpdateNotification"]) {
     NSLog (@"Successfully received the Data Update notification!");
     [[self tableView] reloadData];
     [HUD hide:YES];
-  }
-}
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-  NSLog(@"prepareForSegue");
-  NSLog(@"%@", segue.identifier);
-  
-  if ([[segue identifier] isEqualToString:@"showDetail"]) {
-    NSLog(@"ShowDetails from prepareforsegue");
-    NSInteger row = [[self.tableView indexPathForSelectedRow] row];
-    NSDictionary *post = [wordpressPostAgent.posts objectAtIndex:row];
-    
-    // [segue destinationViewController] is read-only, so in order to
-    // write to that view controller you'll have to locally instantiate
-    // it here:
-    PostViewController *detailViewController = [segue destinationViewController];
-    detailViewController.post = post;
-    
-    // You now have a solid reference to the upcoming / destination view
-    // controller. Example use: Allocate and initialize some property of
-    // the destination view controller before you reach it and inject a
-    // reference to the current view controller into the upcoming one:
-//    upcomingViewController.someProperty = [[SomePropertyClass alloc] initWithString:@"Whatever!"];
-//    upcomingViewController. = [segue sourceViewController];
-    
-    // Or, equivalent, but more straightforward:
-    //upcomingViewController.initialViewController = self;
   }
 }
 

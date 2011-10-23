@@ -75,25 +75,47 @@
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OUg-su-GVC" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Ipd-wG-heW" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="XD5-ez-ZMy">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
                     <tabBarItem key="tabBarItem" title="Vote" image="117-todo.png" id="llf-WZ-yWQ"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="289" y="104"/>
+            <point key="canvasLocation" x="289" y="184"/>
         </scene>
         <scene sceneID="I8d-R2-h50">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RU5-Y3-gk8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="U6i-5s-ybM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fLX-dZ-m0d">
+                <viewController id="U6i-5s-ybM" customClass="PagesViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="QJ1-49-S7R">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PagesCell" textLabel="MzX-SA-BI9" detailTextLabel="ab9-bL-Dsb" style="IBUITableViewCellStyleSubtitle" id="efQ-GX-qOI">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MzX-SA-BI9">
+                                            <rect key="frame" x="10" y="2" width="38" height="22"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ab9-bL-Dsb">
+                                            <rect key="frame" x="10" y="24" width="47" height="18"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
                     <tabBarItem key="tabBarItem" title="About" image="29-heart.png" id="e9U-pT-ydg"/>
                 </viewController>
             </objects>
@@ -111,8 +133,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="12" kind="relationship" relationship="viewControllers" id="dLA-4O-eFC"/>
                         <segue destination="U6i-5s-ybM" kind="relationship" relationship="viewControllers" id="NI2-Je-qNc"/>
+                        <segue destination="12" kind="relationship" relationship="viewControllers" id="dLA-4O-eFC"/>
                         <segue destination="Ipd-wG-heW" kind="relationship" relationship="viewControllers" id="gYN-Ue-wh5"/>
                     </connections>
                 </tabBarController>
@@ -152,6 +174,9 @@
     <classes>
         <class className="NewsViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NewsViewController.h"/>
+        </class>
+        <class className="PagesViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PagesViewController.h"/>
         </class>
         <class className="PostViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PostViewController.h"/>

@@ -1,0 +1,20 @@
+{
+  "pages": [
+    {
+      "name": "About",
+      "url": "http://lemonadealley.com/about/?json=1"
+    },
+    {
+      "name": "Competition",
+      "url": "http://lemonadealley.com/competition/?json=1"
+    },
+    {
+      "name": "Craft Fair",
+      "url": "http://lemonadealley.com/craft-fair/?json=1"
+    },
+    {
+      "name": "Sponsors",
+      "url": "http://lemonadealley.com/sponsors/?json=1"
+    }
+  ]
+}
