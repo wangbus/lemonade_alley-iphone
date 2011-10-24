@@ -90,8 +90,6 @@
   
   //pass the string to the webview
   [webView loadHTMLString:[html description] baseURL:nil];
-  
-  
   [webView reload];
   
   // sethostname (array of dictionaries)

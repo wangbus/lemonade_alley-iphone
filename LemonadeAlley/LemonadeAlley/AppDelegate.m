@@ -1,11 +1,3 @@
-//
-//  AppDelegate.m
-//  LemonadeAlley
-//
-//  Created by Jian Shi Wang on 10/16/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
-//
-
 #import "AppDelegate.h"
 
 @implementation AppDelegate
@@ -15,22 +7,41 @@
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+- (void)customizeAppearance
 {
-  // Override point for customization after application launch.
-  //    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-  //        UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
-  //        UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
-  //        splitViewController.delegate = (id)navigationController.topViewController;
-  //        
-  //        UINavigationController *masterNavigationController = [splitViewController.viewControllers objectAtIndex:0];
-  //        Tab *controller = (MasterViewController *)masterNavigationController.topViewController;
-  //        controller.managedObjectContext = self.managedObjectContext;
-  //    } else {
-  //        UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-  //        MasterViewController *controller = (MasterViewController *)navigationController.topViewController;
-  //        controller.managedObjectContext = self.managedObjectContext;
-  //    }
+  // Create resizable images
+  //  UIImage *gradientImage44 = [[UIImage imageNamed:@"surf_gradient_textured_44"] 
+  //                              resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+  //  UIImage *gradientImage32 = [[UIImage imageNamed:@"surf_gradient_textured_32"] 
+  //                              resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+  //  
+  //  // Set the background image for *all* UINavigationBars
+  //  [[UINavigationBar appearance] setBackgroundImage:gradientImage44 
+  //                                     forBarMetrics:UIBarMetricsDefault];
+  //  [[UINavigationBar appearance] setBackgroundImage:gradientImage32 
+  //                                     forBarMetrics:UIBarMetricsLandscapePhone];
+  UIImage *navigationBackgroundImage44 = [[UIImage imageNamed:@"nav_bg_44"] 
+                              resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+  [[UINavigationBar appearance] setBackgroundImage:navigationBackgroundImage44 forBarMetrics:UIBarMetricsDefault];
+  
+  // Customize the title text for *all* UINavigationBars
+  [[UINavigationBar appearance] setTitleTextAttributes:
+   [NSDictionary dictionaryWithObjectsAndKeys:
+    [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0], 
+    UITextAttributeTextColor, 
+    [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.8], 
+    UITextAttributeTextShadowColor, 
+    [NSValue valueWithUIOffset:UIOffsetMake(0, -1)], 
+    UITextAttributeTextShadowOffset, 
+    [UIFont fontWithName:@"MarkerFelt-Wide" size:18.0], 
+    UITextAttributeFont, 
+    nil]];
+
+  [[UITableView appearance] setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+}
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+  [self customizeAppearance];
   return YES;
 }
 

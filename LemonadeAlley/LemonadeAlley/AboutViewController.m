@@ -24,6 +24,7 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
+  self.tableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"lemon_200x200.png"]];
   wordpressPageAgent = [[WordpressPageAgent alloc] init];
   self.parentViewController.title  = @"About";
   // Uncomment the following line to preserve selection between presentations.
@@ -91,11 +92,23 @@
   
   NSLog(@"Page: %@", page);
   // Configure the cell...
+  cell.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.8];
+  cell.textLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:14.0];
+//  cell.textLabel.textColor = [UIColor whiteColor];
   cell.textLabel.text = [page objectForKey:@"name"];
+//  cell.detailTextLabel.font = [UIFont fontWithName:@"Noteworthy-Light" size:14.0];
   cell.detailTextLabel.text = [page objectForKey:@"url"];
   return cell;
 }
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+  if (section == 0) {
+    return @"Information";
+  }
+  else {
+    return @"";
+  }
+}
 
 /*
  // Override to support conditional editing of the table view.

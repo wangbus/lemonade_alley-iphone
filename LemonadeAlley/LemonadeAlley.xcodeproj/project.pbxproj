@@ -12,6 +12,9 @@
 		A342AA7D144C4AE10051DAC3 /* WordpressPostAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = A342AA7C144C4AE10051DAC3 /* WordpressPostAgent.m */; };
 		A35145D61453AA9900A10826 /* WordpressPageAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = A35145D51453AA9900A10826 /* WordpressPageAgent.m */; };
 		A35145D91453B0DB00A10826 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A35145D81453B0DB00A10826 /* AboutViewController.m */; };
+		A3B448341454FEBA0045FCC3 /* nav_bg_44.png in Resources */ = {isa = PBXBuildFile; fileRef = A3B448331454FEBA0045FCC3 /* nav_bg_44.png */; };
+		A3B4483814550AAC0045FCC3 /* table_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A3B4483714550AAC0045FCC3 /* table_bg.png */; };
+		A3B4483A145510970045FCC3 /* lemon_200x200.png in Resources */ = {isa = PBXBuildFile; fileRef = A3B44839145510970045FCC3 /* lemon_200x200.png */; };
 		A3D1306D144BD0E50019A696 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D1306B144BD0E50019A696 /* NewsViewController.m */; };
 		A3D1309C144BD3C90019A696 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D1309B144BD3C80019A696 /* CFNetwork.framework */; };
 		A3D1309E144BD3D90019A696 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D1309D144BD3D90019A696 /* MobileCoreServices.framework */; };
@@ -257,6 +260,9 @@
 		A35145D51453AA9900A10826 /* WordpressPageAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordpressPageAgent.m; sourceTree = "<group>"; };
 		A35145D71453B0DB00A10826 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		A35145D81453B0DB00A10826 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		A3B448331454FEBA0045FCC3 /* nav_bg_44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_bg_44.png; sourceTree = "<group>"; };
+		A3B4483714550AAC0045FCC3 /* table_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = table_bg.png; sourceTree = "<group>"; };
+		A3B44839145510970045FCC3 /* lemon_200x200.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lemon_200x200.png; sourceTree = "<group>"; };
 		A3D1306A144BD0E50019A696 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
 		A3D1306B144BD0E50019A696 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
 		A3D1309B144BD3C80019A696 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -525,6 +531,16 @@
 			name = MBProgressHUD;
 			sourceTree = "<group>";
 		};
+		A3B447EC1454F2F50045FCC3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A3B44839145510970045FCC3 /* lemon_200x200.png */,
+				A3B4483714550AAC0045FCC3 /* table_bg.png */,
+				A3B448331454FEBA0045FCC3 /* nav_bg_44.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		A3DB1201144B934B00DFC686 = {
 			isa = PBXGroup;
 			children = (
@@ -563,6 +579,7 @@
 		A3DB1218144B934B00DFC686 /* LemonadeAlley */ = {
 			isa = PBXGroup;
 			children = (
+				A3B447EC1454F2F50045FCC3 /* Images */,
 				A342AA77144C4A1E0051DAC3 /* MBProgressHUD */,
 				A3E485F2144BD907001FDD13 /* Models */,
 				A3DB1221144B934B00DFC686 /* AppDelegate.h */,
@@ -1107,6 +1124,9 @@
 				A3DB1433144B9E1A00DFC686 /* 97-puzzle.png in Resources */,
 				A3DB1434144B9E1A00DFC686 /* 98-palette.png in Resources */,
 				A3DB1435144B9E1A00DFC686 /* 99-umbrella.png in Resources */,
+				A3B448341454FEBA0045FCC3 /* nav_bg_44.png in Resources */,
+				A3B4483814550AAC0045FCC3 /* table_bg.png in Resources */,
+				A3B4483A145510970045FCC3 /* lemon_200x200.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

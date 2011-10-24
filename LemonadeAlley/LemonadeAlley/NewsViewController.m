@@ -25,14 +25,13 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  self.title = @"News";
+  self.tableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"lemon_200x200.png"]];
+  self.parentViewController.title  = @"News";
   wordpressPostAgent = [[WordpressPostAgent alloc] init];
   HUD = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
   HUD.labelText = @"Loading";
   [self.navigationController.view addSubview:HUD];
   [HUD show:YES];
-  
-  //  [spinner startAnimating];
   
   // Uncomment the following line to preserve selection between presentations.
   // self.clearsSelectionOnViewWillAppear = NO;
@@ -43,7 +42,6 @@
 
 - (void)viewDidUnload {
   [super viewDidUnload];
-    self.parentViewController.title  = @"About";
   // Release any retained subviews of the main view.
   // e.g. self.myOutlet = nil;
 }
@@ -94,6 +92,13 @@
   if (cell == nil) {
     cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
   }
+  //  cell.backgroundColor = [UIColor clearColor];
+  //  cell.textLabel.font = [UIFont fontWithName:@"Georgia-Bold" size:16.0];
+  //  cell.textLabel.textColor = [UIColor whiteColor];
+  
+  cell.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.8];
+  cell.textLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:14.0];
+  
   NSUInteger row = [indexPath row];
   NSDictionary *post = [[wordpressPostAgent posts] objectAtIndex:row];
   
