@@ -6,9 +6,9 @@
 @synthesize managedObjectContext = __managedObjectContext;
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
+@synthesize facebook;
 
-- (void)customizeAppearance
-{
+- (void)customizeAppearance {
   // Create resizable images
   //  UIImage *gradientImage44 = [[UIImage imageNamed:@"surf_gradient_textured_44"] 
   //                              resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
@@ -21,7 +21,7 @@
   //  [[UINavigationBar appearance] setBackgroundImage:gradientImage32 
   //                                     forBarMetrics:UIBarMetricsLandscapePhone];
   UIImage *navigationBackgroundImage44 = [[UIImage imageNamed:@"nav_bg_44"] 
-                              resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+                                          resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
   [[UINavigationBar appearance] setBackgroundImage:navigationBackgroundImage44 forBarMetrics:UIBarMetricsDefault];
   
   // Customize the title text for *all* UINavigationBars
@@ -36,12 +36,13 @@
     [UIFont fontWithName:@"MarkerFelt-Wide" size:18.0], 
     UITextAttributeFont, 
     nil]];
-
+  
   [[UITableView appearance] setSeparatorStyle:UITableViewCellSeparatorStyleNone];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   [self customizeAppearance];
+  facebook = [[Facebook alloc] initWithAppId:@"YOUR_APP_ID" andDelegate:self];
   return YES;
 }
 
@@ -194,4 +195,16 @@
   return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
 
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+  return [facebook handleOpenURL:url]; 
+}
+
+- (void)fbDidLogin {
+  NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+  [defaults setObject:[facebook accessToken] forKey:@"FBAccessTokenKey"];
+  [defaults setObject:[facebook expirationDate] forKey:@"FBExpirationDateKey"];
+  [defaults synchronize];
+  
+}
 @end
