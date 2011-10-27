@@ -1,0 +1,508 @@
+{
+"contestants": [
+	{
+		"grade division": "10",
+		"team name": "lemon-maid local",
+		"facebook url": "-",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "7",
+		"team name": "mpi lemonade",
+		"facebook url": "-",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "10",
+		"team name": "yellow yum llc",
+		"facebook url": "http://www.facebook.com/YellowYumLLC",
+		"youtube url": "http://www.youtube.com/watch?v=x1EZNA22DwU",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "10",
+		"team name": "serenade lemonade",
+		"facebook url": "http://www.facebook.com/pages/Serenade-Lemonade/152865631469878",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "10",
+		"team name": "lemelicious",
+		"facebook url": "http://www.facebook.com/Lemelicious",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "10",
+		"team name": "sweet and spicy lemonade",
+		"facebook url": "http://www.facebook.com/sweetspicylemonade",
+		"youtube url": "-",
+		"twitter url": "https://twitter.com/#!/SweetSpicyLemon",
+		"other url": "-"
+	},
+	{
+		"grade division": "k",
+		"team name": "little sisters big ideas",
+		"facebook url": "-",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "10",
+		"team name": "lemon grenades",
+		"facebook url": "http://www.facebook.com/pages/Lemonade-Grenade/116063555169560",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "7",
+		"team name": "superlemonademakers",
+		"facebook url": "-",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "10",
+		"team name": "onolemi",
+		"facebook url": "http://www.facebook.com/pages/Ono-Lemi/274281579272105?sk=wall",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "10",
+		"team name": "the lemon bar",
+		"facebook url": "https://www.facebook.com/pages/The-Lemon-Bar/284849968206397",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "3",
+		"team name": "the tree house",
+		"facebook url": "-",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "3",
+		"team name": "lemons for aid",
+		"facebook url": "-",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "7",
+		"team name": "crazy ade",
+		"facebook url": "-",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "k",
+		"team name": "dragonade",
+		"facebook url": "-",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "10",
+		"team name": "heaven lemon",
+		"facebook url": "-",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "?",
+		"team name": "chakra lemonade",
+		"facebook url": "-",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "10",
+		"team name": "likeable lemonade",
+		"facebook url": "likeable lemonade",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "10",
+		"team name": "pink and yellow",
+		"facebook url": "-",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "3",
+		"team name": "mr jems lemon heaven",
+		"facebook url": "-",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "10",
+		"team name": "the pink lemons",
+		"facebook url": "http://www.facebook.com/pages/The-Pink-Lemons/232087016847865",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "3",
+		"team name": "mars lemonade",
+		"facebook url": "-",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "10",
+		"team name": "lemmadonnas",
+		"facebook url": "http://www.facebook.com/pages/LemMadonnas/220636397999731?pos=1&_user=100002739696271",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "3",
+		"team name": "fasi fresh lemonade",
+		"facebook url": "-",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "10",
+		"team name": "lemon fresh",
+		"facebook url": "http://www.facebook.com/pages/Lemonfresh/280790768609336",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "7",
+		"team name": "fresh quenchers",
+		"facebook url": "http://www.facebook.com/#!/pages/Fresh-Quenchers/161798100581864",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "http://www.randomkid.org/projects/freshquenchers"
+	},
+	{
+		"grade division": "10",
+		"team name": "LOLemonade",
+		"facebook url": "http://www.facebook.com/pages/LOLemonade/171197029635599",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "10",
+		"team name": "ghetto lemonade",
+		"facebook url": "http://www.facebook.com/pages/Gh3TT0-L3m0nd3/206700422732604",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "7",
+		"team name": "j's frozen",
+		"facebook url": "-",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "3",
+		"team name": "ponolicious",
+		"facebook url": "http://www.facebook.com/pages/Ponolicious/189431971131465",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "10",
+		"team name": "lemonade by kasey chun and friends",
+		"facebook url": "http://www.facebook.com/pages/Lemonade-by-KaseyChunAndFriends/136474493118710",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "10",
+		"team name": "north shore limenade",
+		"facebook url": "-",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "7",
+		"team name": "greek gazebo",
+		"facebook url": "-",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "3",
+		"team name": "lushes lemonade",
+		"facebook url": "-",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "3",
+		"team name": "TNT LEMON TREATS",
+		"facebook url": "-",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "3",
+		"team name": "lemons in heaven",
+		"facebook url": "-",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "10",
+		"team name": "fresh lemonade",
+		"facebook url": "http://www.facebook.com/pages/Fresh-Lemonade/273162722704516",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "3",
+		"team name": "lick your lips lemonade",
+		"facebook url": "-",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "3",
+		"team name": "sour things plus sweet thoughts",
+		"facebook url": "-",
+		"youtube url": "http://www.youtube.com/watch?v=CplLV8oF_Ps",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "10",
+		"team name": "the lemon shack",
+		"facebook url": "http://www.facebook.com/pages/The-Lemon-Shack/260455960663743",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "7",
+		"team name": "marx lemonade",
+		"facebook url": "-",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "10",
+		"team name": "liquid addiction",
+		"facebook url": "http://www.facebook.com/profile.php?id=100003027897432",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "10",
+		"team name": "o'lemonade",
+		"facebook url": "-",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "10",
+		"team name": "lemon lush",
+		"facebook url": "http://www.facebook.com/pages/Lemon-Lush/294845073862314?sk=info",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "10",
+		"team name": "lemon squeezahs",
+		"facebook url": "http://www.facebook.com/pages/Lemon-Squeezahs/284740084888707",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "10",
+		"team name": "sweet n sour",
+		"facebook url": "http://www.facebook.com/pages/Sweet-N-Sour/29400088727818#!/pages/Sweet-N-Sour/29400088727818",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "10",
+		"team name": "hawaiian lemonade smiles",
+		"facebook url": "-",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "10",
+		"team name": "day dreamers lemonade",
+		"facebook url": "www.facebook.com/pages/Day-Dreamers-Lemonade/1160366778503546?refid=12",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "10",
+		"team name": "rainbow lemonade",
+		"facebook url": "-",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "10",
+		"team name": "sinfully sweet lemonade",
+		"facebook url": "http://www.facebook.com/pages/Sinfully-Sweet-Lemonade/274523772588173",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "10",
+		"team name": "citrus crew",
+		"facebook url": "-",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "10",
+		"team name": "la chika lemonade",
+		"facebook url": "http://www.facebook.com/pages/La-Chika-Lemonade/283039508386940",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "10",
+		"team name": "westside lemonade",
+		"facebook url": "-",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "10",
+		"team name": "sweet treat lemonade",
+		"facebook url": "-",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "10",
+		"team name": "lemon tech",
+		"facebook url": "-",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "10",
+		"team name": "sharin D lemon",
+		"facebook url": "http://www.facebook.com/pages/Sharin-D-Lemon/181885918558210",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "3",
+		"team name": "uncle charlies lemonade",
+		"facebook url": "-",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "3",
+		"team name": "3 lil lemons",
+		"facebook url": "-",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "3",
+		"team name": "lemonade lounge",
+		"facebook url": "-",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "3",
+		"team name": "lemonade brothers",
+		"facebook url": "-",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "k",
+		"team name": "lemon movers",
+		"facebook url": "-",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "3",
+		"team name": "jnakamura@hawaii.rr.com",
+		"facebook url": "double submission?",
+		"youtube url": "-",
+		"twitter url": "-",
+		"other url": "-"
+	},
+	{
+		"grade division": "3",
+		"team name": "lemonade lab",
+		"facebook url": "-",
+		"youtube url": "http://www.youtube.com/watch?v=jrhkFM_4qQA",
+		"twitter url": "-",
+		"other url": "-"
+	}
+]
+}

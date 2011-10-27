@@ -30,7 +30,7 @@
   wordpressPostAgent = [[WordpressPostAgent alloc] init];
   HUD = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
   HUD.labelText = @"Loading";
-  HUD.userInteractionEnabled = NO;
+  //  HUD.userInteractionEnabled = NO;
   [self.navigationController.view addSubview:HUD];
   [HUD show:YES];
   

@@ -1,9 +1,17 @@
-#import "AboutViewController.h"
-#import "PageViewController.h"
+//
+//  VotingViewController.m
+//  LemonadeAlley
+//
+//  Created by Jian Shi Wang on 10/27/11.
+//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//
 
-@implementation AboutViewController
-@synthesize wordpressPageAgent;
+#import "VotingViewController.h"
+
+
+@implementation VotingViewController
 @synthesize HUD;
+@synthesize contestantsInfoAgent;
 
 - (id)initWithStyle:(UITableViewStyle)style {
   self = [super initWithStyle:style];
@@ -25,14 +33,13 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   self.tableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"lemon_200x200.png"]];
-  wordpressPageAgent = [[WordpressPageAgent alloc] init];
+  contestantsInfoAgent = [[ContestantsInfoAgent alloc] init];
   self.parentViewController.title  = @"About";
   // Uncomment the following line to preserve selection between presentations.
   // self.clearsSelectionOnViewWillAppear = NO;
   
   // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
   // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-  
   HUD = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
   HUD.labelText = @"Loading";
   //  HUD.userInteractionEnabled = NO;
@@ -50,7 +57,7 @@
 - (void)viewWillAppear:(BOOL)animated {
   [[NSNotificationCenter defaultCenter] addObserver:self
                                            selector:@selector(receiveDataNotification:) 
-                                               name:@"PagesUpdateNotification"
+                                               name:@"ContestantInfoUpdateNotification"
                                              object:nil];
   [super viewWillAppear:animated];
 }
@@ -83,7 +90,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-  return [[wordpressPageAgent pages] count];
+  return [[contestantsInfoAgent contestantsInfos] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -94,22 +101,22 @@
     cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
   }
   NSUInteger row = [indexPath row];
-  NSDictionary *page = [[wordpressPageAgent pages] objectAtIndex:row];
+  NSDictionary *contestantsInfo = [[contestantsInfoAgent contestantsInfos] objectAtIndex:row];
   
-  NSLog(@"Page: %@", page);
+  NSLog(@"Page: %@", contestantsInfo);
   // Configure the cell...
   cell.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.8];
   cell.textLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:14.0];
-//  cell.textLabel.textColor = [UIColor whiteColor];
-  cell.textLabel.text = [page objectForKey:@"name"];
-//  cell.detailTextLabel.font = [UIFont fontWithName:@"Noteworthy-Light" size:14.0];
-  cell.detailTextLabel.text = [page objectForKey:@"url"];
+  //  cell.textLabel.textColor = [UIColor whiteColor];
+  cell.textLabel.text = [contestantsInfo objectForKey:@"team name"];
+  //  cell.detailTextLabel.font = [UIFont fontWithName:@"Noteworthy-Light" size:14.0];
+  cell.detailTextLabel.text = [contestantsInfo objectForKey:@"grade division"];
   return cell;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
   if (section == 0) {
-    return @"Information";
+    return @"Contestants";
   }
   else {
     return @"";
@@ -168,8 +175,8 @@
 }
 
 - (void) receiveDataNotification:(NSNotification *) notification {
-  if ([[notification name] isEqualToString:@"PagesUpdateNotification"]) {
-    NSLog (@"Successfully received the Data Update notification!");
+  if ([[notification name] isEqualToString:@"ContestantInfoUpdateNotification"]) {
+    NSLog (@"Successfully received the ContestantInfoUpdateNotification!");
     [[self tableView] reloadData];
     [HUD hide:YES];
   }
@@ -181,13 +188,13 @@
   if ([[segue identifier] isEqualToString:@"showPage"]) {
     NSLog(@"ShowDetails from prepareforsegue");
     NSInteger row = [[self.tableView indexPathForSelectedRow] row];
-    NSDictionary *page = [wordpressPageAgent.pages objectAtIndex:row];
+    NSDictionary *contestantInfo = [contestantsInfoAgent.contestantsInfos objectAtIndex:row];
     
     // [segue destinationViewController] is read-only, so in order to
     // write to that view controller you'll have to locally instantiate
     // it here:
-    PageViewController *detailViewController = [segue destinationViewController];
-    detailViewController.page = page;
+//    PageViewController *detailViewController = [segue destinationViewController];
+//    detailViewController.page = page;
     
     // You now have a solid reference to the upcoming / destination view
     // controller. Example use: Allocate and initialize some property of
@@ -200,6 +207,4 @@
     //upcomingViewController.initialViewController = self;
   }
 }
-
-
 @end
