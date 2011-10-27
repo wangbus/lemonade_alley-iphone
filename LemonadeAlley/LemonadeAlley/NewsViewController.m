@@ -30,6 +30,7 @@
   wordpressPostAgent = [[WordpressPostAgent alloc] init];
   HUD = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
   HUD.labelText = @"Loading";
+  HUD.userInteractionEnabled = NO;
   [self.navigationController.view addSubview:HUD];
   [HUD show:YES];
   
@@ -158,6 +159,15 @@
    // Pass the selected object to the new view controller.
    [self.navigationController pushViewController:detailViewController animated:YES];
    */
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+  if (section == 0) {
+    return @"Blog";
+  }
+  else {
+    return @"";
+  }
 }
 
 - (void) receiveDataNotification:(NSNotification *) notification {

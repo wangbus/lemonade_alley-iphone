@@ -7,6 +7,7 @@
 @synthesize responseData;
 @synthesize response;
 @synthesize webView;
+@synthesize HUD;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -46,6 +47,12 @@
   else {
     // Inform the user that the connection failed.
   }
+  
+  HUD = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
+  HUD.labelText = @"Loading";
+//  HUD.userInteractionEnabled = NO;
+  [self.navigationController.view addSubview:HUD];
+  [HUD show:YES];
 }
 
 
@@ -91,7 +98,7 @@
   //pass the string to the webview
   [webView loadHTMLString:[html description] baseURL:nil];
   [webView reload];
-  
+  [HUD hide:YES];
   // sethostname (array of dictionaries)
 //  posts = [response objectForKey:@"posts"];
   

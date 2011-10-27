@@ -11,5 +11,6 @@
 @interface PostViewController : UIViewController <UISplitViewControllerDelegate>
 
 @property (strong, nonatomic) NSDictionary *post;
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 
 @end

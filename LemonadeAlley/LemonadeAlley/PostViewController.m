@@ -3,11 +3,11 @@
 @implementation PostViewController
 
 @synthesize post;
+@synthesize webView;
 
 #pragma mark - Managing the detail item
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
   [super didReceiveMemoryWarning];
   // Release any cached data, images, etc that aren't in use.
 }
@@ -16,51 +16,39 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  //create the string
   NSMutableString *html = [NSMutableString stringWithString:[post objectForKey:@"content"]];
-  
-  //instantiate the web view
-  UIWebView *webView = [[UIWebView alloc] initWithFrame:self.view.frame];
-  
+  self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"lemon_200x200.png"]];
   //make the background transparent
-  [webView setBackgroundColor:[UIColor clearColor]];
-  
+  [webView setOpaque:NO];
+  [webView setBackgroundColor:[UIColor colorWithWhite:1 alpha:0.3]];
   //pass the string to the webview
   [webView loadHTMLString:[html description] baseURL:nil];
-  
-  //add it to the subview
-  [self.view addSubview:webView];
 }
 
-- (void)viewDidUnload
-{
+- (void)viewDidUnload {
+  [self setWebView:nil];
   [super viewDidUnload];
   // Release any retained subviews of the main view.
   // e.g. self.myOutlet = nil;
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
+- (void)viewWillAppear:(BOOL)animated {
   [super viewWillAppear:animated];
 }
 
-- (void)viewDidAppear:(BOOL)animated
-{
+- (void)viewDidAppear:(BOOL)animated {
   [super viewDidAppear:animated];
 }
 
-- (void)viewWillDisappear:(BOOL)animated
-{
+- (void)viewWillDisappear:(BOOL)animated {
 	[super viewWillDisappear:animated];
 }
 
-- (void)viewDidDisappear:(BOOL)animated
-{
+- (void)viewDidDisappear:(BOOL)animated {
 	[super viewDidDisappear:animated];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
   // Return YES for supported orientations
   if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
