@@ -153,6 +153,9 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <connections>
+                                    <segue destination="hGk-C3-WpI" kind="push" identifier="showContestantInfo" id="FLk-Si-TcA"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -164,6 +167,30 @@
                 </tableViewController>
             </objects>
             <point key="canvasLocation" x="283" y="134"/>
+        </scene>
+        <scene sceneID="RHq-1D-tlR">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tX8-iU-KCf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="hGk-C3-WpI" customClass="FacebookViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X7i-WQ-GI9">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="Vcx-D6-7M0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zzG-Zl-H9S"/>
+                    <connections>
+                        <outlet property="webView" destination="Vcx-D6-7M0" id="DQ8-nt-163"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="714" y="134"/>
         </scene>
         <scene sceneID="pfR-wB-PsM">
             <objects>
@@ -242,6 +269,12 @@
     <classes>
         <class className="AboutViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutViewController.h"/>
+        </class>
+        <class className="FacebookViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FacebookViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
         </class>
         <class className="NewsViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NewsViewController.h"/>

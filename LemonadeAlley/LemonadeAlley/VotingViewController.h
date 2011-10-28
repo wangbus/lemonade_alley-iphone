@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "MBProgressHUD.h"
 #import "ContestantsInfoAgent.h"
+#import "FacebookViewController.h"
 
 @interface VotingViewController : UITableViewController
 

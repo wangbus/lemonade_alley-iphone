@@ -185,16 +185,16 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
   NSLog(@"Segue identifier: %@", segue.identifier);
   
-  if ([[segue identifier] isEqualToString:@"showPage"]) {
-    NSLog(@"ShowDetails from prepareforsegue");
+  if ([[segue identifier] isEqualToString:@"showContestantInfo"]) {
+    NSLog(@"ShowDetails from prepareforsegue (Voting)");
     NSInteger row = [[self.tableView indexPathForSelectedRow] row];
     NSDictionary *contestantInfo = [contestantsInfoAgent.contestantsInfos objectAtIndex:row];
     
     // [segue destinationViewController] is read-only, so in order to
     // write to that view controller you'll have to locally instantiate
     // it here:
-//    PageViewController *detailViewController = [segue destinationViewController];
-//    detailViewController.page = page;
+    FacebookViewController *facebookViewController = [segue destinationViewController];
+    facebookViewController.contestantInfo = contestantInfo;
     
     // You now have a solid reference to the upcoming / destination view
     // controller. Example use: Allocate and initialize some property of

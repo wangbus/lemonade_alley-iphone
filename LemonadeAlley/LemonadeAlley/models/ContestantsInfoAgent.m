@@ -1,11 +1,3 @@
-//
-//  ContestantsInfoAgent.m
-//  LemonadeAlley
-//
-//  Created by Jian Shi Wang on 10/27/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
-//
-
 #import "ContestantsInfoAgent.h"
 
 @implementation ContestantsInfoAgent

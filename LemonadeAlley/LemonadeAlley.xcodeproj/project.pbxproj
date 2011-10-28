@@ -22,6 +22,7 @@
 		A39B316514566A8D00DE2A88 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = A39B315814566A8D00DE2A88 /* SBJsonBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A39B316614566A8D00DE2A88 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A39B315A14566A8D00DE2A88 /* SBJsonParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A39B316714566A8D00DE2A88 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = A39B315C14566A8D00DE2A88 /* SBJsonWriter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A3B01A5B145A7BD9007D3CDD /* FacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B01A5A145A7BD9007D3CDD /* FacebookViewController.m */; };
 		A3B448341454FEBA0045FCC3 /* nav_bg_44.png in Resources */ = {isa = PBXBuildFile; fileRef = A3B448331454FEBA0045FCC3 /* nav_bg_44.png */; };
 		A3B4483814550AAC0045FCC3 /* table_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A3B4483714550AAC0045FCC3 /* table_bg.png */; };
 		A3B4483A145510970045FCC3 /* lemon_200x200.png in Resources */ = {isa = PBXBuildFile; fileRef = A3B44839145510970045FCC3 /* lemon_200x200.png */; };
@@ -294,6 +295,8 @@
 		A39B315A14566A8D00DE2A88 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
 		A39B315B14566A8D00DE2A88 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		A39B315C14566A8D00DE2A88 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		A3B01A59145A7BD9007D3CDD /* FacebookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookViewController.h; sourceTree = "<group>"; };
+		A3B01A5A145A7BD9007D3CDD /* FacebookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookViewController.m; sourceTree = "<group>"; };
 		A3B448331454FEBA0045FCC3 /* nav_bg_44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_bg_44.png; sourceTree = "<group>"; };
 		A3B4483714550AAC0045FCC3 /* table_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = table_bg.png; sourceTree = "<group>"; };
 		A3B44839145510970045FCC3 /* lemon_200x200.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lemon_200x200.png; sourceTree = "<group>"; };
@@ -675,6 +678,8 @@
 				A3DB1231144B934C00DFC686 /* PostViewController.m */,
 				A3B4484F145983620045FCC3 /* VotingViewController.h */,
 				A3B44850145983620045FCC3 /* VotingViewController.m */,
+				A3B01A59145A7BD9007D3CDD /* FacebookViewController.h */,
+				A3B01A5A145A7BD9007D3CDD /* FacebookViewController.m */,
 				A3DB122A144B934C00DFC686 /* LemonadeAlley.xcdatamodeld */,
 				A3DB1219144B934B00DFC686 /* Supporting Files */,
 			);
@@ -1267,6 +1272,7 @@
 				A3B4484D145983560045FCC3 /* ContestantsInfoAgent.m in Sources */,
 				A3B4484E145983560045FCC3 /* WordpressPageAgent.m in Sources */,
 				A3B44851145983620045FCC3 /* VotingViewController.m in Sources */,
+				A3B01A5B145A7BD9007D3CDD /* FacebookViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
