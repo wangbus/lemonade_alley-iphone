@@ -11,6 +11,7 @@
 #import "AppDelegate.h"
 
 int main(int argc, char *argv[]) {
+  [NSThread sleepForTimeInterval:3];
   @autoreleasepool {
     return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
   }

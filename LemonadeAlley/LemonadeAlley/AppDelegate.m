@@ -20,9 +20,9 @@
   //                                     forBarMetrics:UIBarMetricsDefault];
   //  [[UINavigationBar appearance] setBackgroundImage:gradientImage32 
   //                                     forBarMetrics:UIBarMetricsLandscapePhone];
-//  UIImage *navigationBackgroundImage44 = [[UIImage imageNamed:@"nav_bg_44"] 
-//                                          resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
-//  [[UINavigationBar appearance] setBackgroundImage:navigationBackgroundImage44 forBarMetrics:UIBarMetricsDefault];
+  //  UIImage *navigationBackgroundImage44 = [[UIImage imageNamed:@"nav_bg_44"] 
+  //                                          resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+  //  [[UINavigationBar appearance] setBackgroundImage:navigationBackgroundImage44 forBarMetrics:UIBarMetricsDefault];
   
   // Customize the title text for *all* UINavigationBars
   [[UINavigationBar appearance] setTitleTextAttributes:
@@ -42,7 +42,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   [self customizeAppearance];
-  facebook = [[Facebook alloc] initWithAppId:@"YOUR_APP_ID" andDelegate:self];
+
+  //  facebook = [[Facebook alloc] initWithAppId:@"YOUR_APP_ID" andDelegate:self];
   return YES;
 }
 

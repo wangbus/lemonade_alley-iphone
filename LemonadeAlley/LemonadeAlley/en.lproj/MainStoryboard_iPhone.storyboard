@@ -19,7 +19,7 @@
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="-708" y="-479"/>
+            <point key="canvasLocation" x="-997" y="-521"/>
         </scene>
         <scene sceneID="18">
             <objects>
@@ -156,7 +156,7 @@
                             <outlet property="delegate" destination="7vH-Nm-zaF" id="BL3-aq-W9e"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Vote" image="117-todo.png" id="PMZ-wF-Lj8"/>
+                    <tabBarItem key="tabBarItem" title="Contestants" image="117-todo.png" id="PMZ-wF-Lj8"/>
                 </tableViewController>
             </objects>
             <point key="canvasLocation" x="283" y="134"/>
@@ -212,8 +212,8 @@
         <scene sceneID="tp7-Cv-Aml">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h8e-kB-ZT6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tabBarController definesPresentationContext="YES" id="7fA-b1-lM5" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="xZl-Jl-IcN"/>
+                <tabBarController definesPresentationContext="YES" id="7fA-b1-lM5" customClass="MainTabBarController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="About" id="xZl-Jl-IcN"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="UOC-Zm-0EQ">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
@@ -227,7 +227,7 @@
                     </connections>
                 </tabBarController>
             </objects>
-            <point key="canvasLocation" x="-293" y="-479"/>
+            <point key="canvasLocation" x="-512" y="-521"/>
         </scene>
         <scene sceneID="24">
             <objects>
@@ -268,6 +268,9 @@
             <relationships>
                 <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
             </relationships>
+        </class>
+        <class className="MainTabBarController" superclassName="UITabBarController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainTabBarController.h"/>
         </class>
         <class className="NewsViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NewsViewController.h"/>

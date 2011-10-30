@@ -1,16 +1,14 @@
 //
-//  FacebookViewController.m
+//  MainTabBarController.m
 //  LemonadeAlley
 //
-//  Created by James Wang on 10/27/11.
+//  Created by Jian Shi Wang on 10/30/11.
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "FacebookViewController.h"
+#import "MainTabBarController.h"
 
-@implementation FacebookViewController
-@synthesize webView;
-@synthesize contestantInfo;
+@implementation MainTabBarController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -41,26 +39,11 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
   [super viewDidLoad];
-  NSString *urlAddress = [self.contestantInfo objectForKey:@"facebook url"];
-  
-  if ([urlAddress isEqualToString:@"-"]) {
-    [webView loadHTMLString:@"No Facebook page found." baseURL:nil];
-    [webView setOpaque:NO];
-    [webView setBackgroundColor:[UIColor colorWithWhite:1 alpha:0.3]];
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"lemon_200x200.png"]];
-  }
-  else {
-    NSURL *url = [NSURL URLWithString:urlAddress];
-    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
-    [webView loadRequest:requestObj];
-    [webView setOpaque:NO];
-    //pass the string to the webview
-  }
 }
+
 
 - (void)viewDidUnload
 {
-  [self setWebView:nil];
   [super viewDidUnload];
   // Release any retained subviews of the main view.
   // e.g. self.myOutlet = nil;
@@ -70,6 +53,10 @@
 {
   // Return YES for supported orientations
   return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
+  self.title = item.title;
 }
 
 @end

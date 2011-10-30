@@ -22,6 +22,9 @@
 		A39B316514566A8D00DE2A88 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = A39B315814566A8D00DE2A88 /* SBJsonBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A39B316614566A8D00DE2A88 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A39B315A14566A8D00DE2A88 /* SBJsonParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A39B316714566A8D00DE2A88 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = A39B315C14566A8D00DE2A88 /* SBJsonWriter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A3A1862D145D27B4000ACE25 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A3A1862C145D27B4000ACE25 /* Icon.png */; };
+		A3A18630145DA07E000ACE25 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A1862F145DA07D000ACE25 /* MainTabBarController.m */; };
+		A3A18636145DB843000ACE25 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A3A18635145DB843000ACE25 /* Default.png */; };
 		A3B01A5B145A7BD9007D3CDD /* FacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B01A5A145A7BD9007D3CDD /* FacebookViewController.m */; };
 		A3B448341454FEBA0045FCC3 /* nav_bg_44.png in Resources */ = {isa = PBXBuildFile; fileRef = A3B448331454FEBA0045FCC3 /* nav_bg_44.png */; };
 		A3B4483814550AAC0045FCC3 /* table_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A3B4483714550AAC0045FCC3 /* table_bg.png */; };
@@ -295,6 +298,10 @@
 		A39B315A14566A8D00DE2A88 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
 		A39B315B14566A8D00DE2A88 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		A39B315C14566A8D00DE2A88 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		A3A1862C145D27B4000ACE25 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		A3A1862E145DA07D000ACE25 /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		A3A1862F145DA07D000ACE25 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		A3A18635145DB843000ACE25 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		A3B01A59145A7BD9007D3CDD /* FacebookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookViewController.h; sourceTree = "<group>"; };
 		A3B01A5A145A7BD9007D3CDD /* FacebookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookViewController.m; sourceTree = "<group>"; };
 		A3B448331454FEBA0045FCC3 /* nav_bg_44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_bg_44.png; sourceTree = "<group>"; };
@@ -648,6 +655,8 @@
 		A3B447EC1454F2F50045FCC3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				A3A18635145DB843000ACE25 /* Default.png */,
+				A3A1862C145D27B4000ACE25 /* Icon.png */,
 				A3B44839145510970045FCC3 /* lemon_200x200.png */,
 				A3B4483714550AAC0045FCC3 /* table_bg.png */,
 				A3B448331454FEBA0045FCC3 /* nav_bg_44.png */,
@@ -706,6 +715,8 @@
 				A314C471145CDE7300CFC860 /* Voting */,
 				A3DB122A144B934C00DFC686 /* LemonadeAlley.xcdatamodeld */,
 				A3DB1219144B934B00DFC686 /* Supporting Files */,
+				A3A1862E145DA07D000ACE25 /* MainTabBarController.h */,
+				A3A1862F145DA07D000ACE25 /* MainTabBarController.m */,
 			);
 			path = LemonadeAlley;
 			sourceTree = "<group>";
@@ -1240,6 +1251,8 @@
 				A3B4483814550AAC0045FCC3 /* table_bg.png in Resources */,
 				A3B4483A145510970045FCC3 /* lemon_200x200.png in Resources */,
 				A39B315E14566A8D00DE2A88 /* FBDialog.bundle in Resources */,
+				A3A1862D145D27B4000ACE25 /* Icon.png in Resources */,
+				A3A18636145DB843000ACE25 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1297,6 +1310,7 @@
 				A3B4484E145983560045FCC3 /* WordpressPageAgent.m in Sources */,
 				A3B44851145983620045FCC3 /* VotingViewController.m in Sources */,
 				A3B01A5B145A7BD9007D3CDD /* FacebookViewController.m in Sources */,
+				A3A18630145DA07E000ACE25 /* MainTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

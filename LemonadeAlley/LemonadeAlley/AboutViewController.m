@@ -29,7 +29,6 @@
   [super viewDidLoad];
   self.tableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"lemon_200x200.png"]];
   wordpressPageAgent = [[WordpressPageAgent alloc] init];
-  self.parentViewController.title  = @"About";
   // Uncomment the following line to preserve selection between presentations.
   // self.clearsSelectionOnViewWillAppear = NO;
   
@@ -55,6 +54,7 @@
                                            selector:@selector(receiveDataNotification:) 
                                                name:@"PagesUpdateNotification"
                                              object:nil];
+  self.navigationItem.title = @"About";
   [super viewWillAppear:animated];
 }
 

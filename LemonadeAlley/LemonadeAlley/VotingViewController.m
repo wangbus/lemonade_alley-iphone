@@ -31,7 +31,6 @@
   [arrayOfSections addObject:[NSString stringWithFormat:@"Grades K-2"]];
   self.tableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"lemon_200x200.png"]];
   contestantsInfoAgent = [[ContestantsInfoAgent alloc] init];
-  self.parentViewController.title  = @"Voting";
   // Uncomment the following line to preserve selection between presentations.
   // self.clearsSelectionOnViewWillAppear = NO;
   
@@ -59,24 +58,19 @@
   [super viewWillAppear:animated];
 }
 
-- (void)viewDidAppear:(BOOL)animated
-{
+- (void)viewDidAppear:(BOOL)animated {
   [super viewDidAppear:animated];
-  self.parentViewController.title  = @"Voting";
 }
 
-- (void)viewWillDisappear:(BOOL)animated
-{
+- (void)viewWillDisappear:(BOOL)animated {
   [super viewWillDisappear:animated];
 }
 
-- (void)viewDidDisappear:(BOOL)animated
-{
+- (void)viewDidDisappear:(BOOL)animated {
   [super viewDidDisappear:animated];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
   // Return YES for supported orientations
   return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
@@ -136,6 +130,7 @@
   cell.textLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:14.0];
   //  cell.textLabel.textColor = [UIColor whiteColor];
   cell.textLabel.text = [contestantsInfo objectForKey:@"team name"];
+  cell.textLabel.backgroundColor = [UIColor clearColor];
   //  cell.detailTextLabel.font = [UIFont fontWithName:@"Noteworthy-Light" size:14.0];
 //  cell.detailTextLabel.text = [NSString stringWithFormat:@"Grade: %@", [contestantsInfo objectForKey:@"grade division"]];
   return cell;

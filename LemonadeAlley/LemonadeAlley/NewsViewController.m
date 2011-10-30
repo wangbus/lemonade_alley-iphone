@@ -30,25 +30,16 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   self.tableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"lemon_200x200.png"]];
-  self.parentViewController.title  = @"News";
   wordpressPostAgent = [[WordpressPostAgent alloc] init];
   HUD = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
   HUD.labelText = @"Loading";
   //  HUD.userInteractionEnabled = NO;
   [self.navigationController.view addSubview:HUD];
   [HUD show:YES];
-  
-  // Uncomment the following line to preserve selection between presentations.
-  // self.clearsSelectionOnViewWillAppear = NO;
-  
-  // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-  // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)viewDidUnload {
   [super viewDidUnload];
-  // Release any retained subviews of the main view.
-  // e.g. self.myOutlet = nil;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
