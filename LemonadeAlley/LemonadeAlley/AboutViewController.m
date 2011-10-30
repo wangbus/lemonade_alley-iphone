@@ -1,3 +1,7 @@
+#define FONT_SIZE 14.0f
+#define CELL_CONTENT_WIDTH 320.0f
+#define CELL_CONTENT_MARGIN 10.0f
+
 #import "AboutViewController.h"
 #import "PageViewController.h"
 
@@ -16,7 +20,6 @@
 - (void)didReceiveMemoryWarning {
   // Releases the view if it doesn't have a superview.
   [super didReceiveMemoryWarning];
-  
   // Release any cached data, images, etc that aren't in use.
 }
 
@@ -99,11 +102,17 @@
   NSLog(@"Page: %@", page);
   // Configure the cell...
   cell.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.8];
+  
+  cell.textLabel.backgroundColor = [UIColor clearColor];
   cell.textLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:14.0];
 //  cell.textLabel.textColor = [UIColor whiteColor];
   cell.textLabel.text = [page objectForKey:@"name"];
 //  cell.detailTextLabel.font = [UIFont fontWithName:@"Noteworthy-Light" size:14.0];
-  cell.detailTextLabel.text = [page objectForKey:@"url"];
+  
+  cell.detailTextLabel.backgroundColor = [UIColor clearColor];
+  cell.detailTextLabel.text = [page objectForKey:@"details"];
+  cell.detailTextLabel.lineBreakMode = UILineBreakModeWordWrap;
+  cell.detailTextLabel.numberOfLines = 0;
   return cell;
 }
 
@@ -115,6 +124,16 @@
     return @"";
   }
 }
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+  NSDictionary *page = [[wordpressPageAgent pages] objectAtIndex:[indexPath row]];
+  NSString *text = [page objectForKey:@"title"];
+  CGSize constraint = CGSizeMake(CELL_CONTENT_WIDTH - (CELL_CONTENT_MARGIN * 2), 20000.0f);
+  CGSize size = [text sizeWithFont:[UIFont systemFontOfSize:FONT_SIZE] constrainedToSize:constraint lineBreakMode:UILineBreakModeWordWrap];
+  CGFloat height = MAX(size.height, 44.0f);
+  return height + (CELL_CONTENT_MARGIN * 2);
+}
+
 
 /*
  // Override to support conditional editing of the table view.
@@ -170,8 +189,8 @@
 - (void) receiveDataNotification:(NSNotification *) notification {
   if ([[notification name] isEqualToString:@"PagesUpdateNotification"]) {
     NSLog (@"Successfully received the Data Update notification!");
-    [[self tableView] reloadData];
     [HUD hide:YES];
+    [[self tableView] reloadData];
   }
 }
 

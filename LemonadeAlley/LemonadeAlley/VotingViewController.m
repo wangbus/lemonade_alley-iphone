@@ -1,22 +1,14 @@
-//
-//  VotingViewController.m
-//  LemonadeAlley
-//
-//  Created by Jian Shi Wang on 10/27/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
-//
-
 #import "VotingViewController.h"
 
 
 @implementation VotingViewController
 @synthesize HUD;
 @synthesize contestantsInfoAgent;
+@synthesize arrayOfSections;
 
 - (id)initWithStyle:(UITableViewStyle)style {
   self = [super initWithStyle:style];
   if (self) {
-    // Custom initialization
   }
   return self;
 }
@@ -32,9 +24,14 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
+  arrayOfSections = [[NSMutableArray alloc] init];
+  [arrayOfSections addObject:[NSString stringWithFormat:@"Grades 10-12"]];
+  [arrayOfSections addObject:[NSString stringWithFormat:@"Grades 7-9"]];
+  [arrayOfSections addObject:[NSString stringWithFormat:@"Grades 3-6"]];
+  [arrayOfSections addObject:[NSString stringWithFormat:@"Grades K-2"]];
   self.tableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"lemon_200x200.png"]];
   contestantsInfoAgent = [[ContestantsInfoAgent alloc] init];
-  self.parentViewController.title  = @"About";
+  self.parentViewController.title  = @"Voting";
   // Uncomment the following line to preserve selection between presentations.
   // self.clearsSelectionOnViewWillAppear = NO;
   
@@ -65,6 +62,7 @@
 - (void)viewDidAppear:(BOOL)animated
 {
   [super viewDidAppear:animated];
+  self.parentViewController.title  = @"Voting";
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -86,11 +84,26 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-  return 1;
+  return [arrayOfSections count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-  return [[contestantsInfoAgent contestantsInfos] count];
+  
+  if (section == 0) {
+    return [[contestantsInfoAgent contestants10] count];
+  }
+  else if (section == 1) {
+    return [[contestantsInfoAgent contestants7] count];
+  }
+  else if (section == 2) {
+    return [[contestantsInfoAgent contestants3] count];
+  }
+  else if (section == 3) {
+    return [[contestantsInfoAgent contestantsK] count];
+  }
+  else {
+    return 0;
+  }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -101,8 +114,22 @@
     cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
   }
   NSUInteger row = [indexPath row];
-  NSDictionary *contestantsInfo = [[contestantsInfoAgent contestantsInfos] objectAtIndex:row];
+  NSDictionary *contestantsInfo = nil;
   
+  if (indexPath.section == 0) {
+   contestantsInfo = [[contestantsInfoAgent contestants10] objectAtIndex:row];
+  }
+  else if (indexPath.section == 1) {
+    contestantsInfo = [[contestantsInfoAgent contestants7] objectAtIndex:row];
+  }
+  else if (indexPath.section == 2) {
+    contestantsInfo = [[contestantsInfoAgent contestants3] objectAtIndex:row];
+  }
+  else if (indexPath.section == 3) {
+    contestantsInfo = [[contestantsInfoAgent contestantsK] objectAtIndex:row];
+  }
+  
+
   NSLog(@"Page: %@", contestantsInfo);
   // Configure the cell...
   cell.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.8];
@@ -110,17 +137,12 @@
   //  cell.textLabel.textColor = [UIColor whiteColor];
   cell.textLabel.text = [contestantsInfo objectForKey:@"team name"];
   //  cell.detailTextLabel.font = [UIFont fontWithName:@"Noteworthy-Light" size:14.0];
-  cell.detailTextLabel.text = [contestantsInfo objectForKey:@"grade division"];
+//  cell.detailTextLabel.text = [NSString stringWithFormat:@"Grade: %@", [contestantsInfo objectForKey:@"grade division"]];
   return cell;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-  if (section == 0) {
-    return @"Contestants";
-  }
-  else {
-    return @"";
-  }
+  return [[self arrayOfSections] objectAtIndex:section];
 }
 
 /*

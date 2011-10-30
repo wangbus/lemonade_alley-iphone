@@ -20,9 +20,9 @@
   //                                     forBarMetrics:UIBarMetricsDefault];
   //  [[UINavigationBar appearance] setBackgroundImage:gradientImage32 
   //                                     forBarMetrics:UIBarMetricsLandscapePhone];
-  UIImage *navigationBackgroundImage44 = [[UIImage imageNamed:@"nav_bg_44"] 
-                                          resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
-  [[UINavigationBar appearance] setBackgroundImage:navigationBackgroundImage44 forBarMetrics:UIBarMetricsDefault];
+//  UIImage *navigationBackgroundImage44 = [[UIImage imageNamed:@"nav_bg_44"] 
+//                                          resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+//  [[UINavigationBar appearance] setBackgroundImage:navigationBackgroundImage44 forBarMetrics:UIBarMetricsDefault];
   
   // Customize the title text for *all* UINavigationBars
   [[UINavigationBar appearance] setTitleTextAttributes:
@@ -33,7 +33,7 @@
     UITextAttributeTextShadowColor, 
     [NSValue valueWithUIOffset:UIOffsetMake(0, -1)], 
     UITextAttributeTextShadowOffset, 
-    [UIFont fontWithName:@"MarkerFelt-Wide" size:18.0], 
+    [UIFont fontWithName:@"Helvetica-Bold" size:18.0], 
     UITextAttributeFont, 
     nil]];
   

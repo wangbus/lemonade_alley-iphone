@@ -36,6 +36,8 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   NSString *url = [page objectForKey:@"url"];
+  self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"lemon_200x200.png"]];
+  //make the background transparent
   // Create the request.
   NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]
                                            cachePolicy:NSURLRequestUseProtocolCachePolicy
@@ -93,7 +95,9 @@
   NSDictionary *jsonPage = [response objectForKey:@"page"];
   NSString *html = [jsonPage objectForKey:@"content"];
   NSLog(@"HTML: %@", html);
-  [webView setBackgroundColor:[UIColor clearColor]];
+  
+  [webView setOpaque:NO];
+  [webView setBackgroundColor:[UIColor colorWithWhite:1 alpha:0.3]];
   
   //pass the string to the webview
   [webView loadHTMLString:[html description] baseURL:nil];

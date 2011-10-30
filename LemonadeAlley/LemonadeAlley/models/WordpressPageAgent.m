@@ -18,7 +18,7 @@
   if (self != nil) {
     // Create the request.
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://wangb.us/la/pages.json"]
-                                             cachePolicy:NSURLRequestUseProtocolCachePolicy
+                                             cachePolicy:NSURLRequestReloadIgnoringCacheData
                                          timeoutInterval:60.0];
     NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
     if (connection) {
@@ -56,7 +56,7 @@
   
   // dictionary (array element)
   for (NSDictionary *post in pages) {
-    NSString *content = [post objectForKey:@"name"];
+    NSString *content = [post objectForKey:@"details"];
     NSLog(@"%@", content);
   }
   

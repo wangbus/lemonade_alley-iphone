@@ -43,16 +43,24 @@
   [super viewDidLoad];
   NSString *urlAddress = [self.contestantInfo objectForKey:@"facebook url"];
   
-  //Create a URL object.
-  NSURL *url = [NSURL URLWithString:urlAddress];
-  
-  //URL Requst Object
-  NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
-  
-  //Load the request in the UIWebView.
-  [webView loadRequest:requestObj];
-  [webView setOpaque:NO];
-  //pass the string to the webview
+  if ([urlAddress isEqualToString:@"-"]) {
+    [webView loadHTMLString:@"No Facebook page found." baseURL:nil];
+    [webView setOpaque:NO];
+    [webView setBackgroundColor:[UIColor colorWithWhite:1 alpha:0.3]];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"lemon_200x200.png"]];
+  }
+  else {
+    //Create a URL object.
+    NSURL *url = [NSURL URLWithString:urlAddress];
+    
+    //URL Requst Object
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    
+    //Load the request in the UIWebView.
+    [webView loadRequest:requestObj];
+    [webView setOpaque:NO];
+    //pass the string to the webview
+  }
 }
 
 - (void)viewDidUnload

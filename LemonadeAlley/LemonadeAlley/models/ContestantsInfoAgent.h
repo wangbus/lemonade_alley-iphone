@@ -14,4 +14,10 @@
 @property (strong, nonatomic) NSDictionary *response;
 @property (strong, nonatomic) NSArray *contestantsInfos;
 
+@property (strong, nonatomic) NSMutableArray *contestants10;
+@property (strong, nonatomic) NSMutableArray *contestants7;
+@property (strong, nonatomic) NSMutableArray *contestants3;
+@property (strong, nonatomic) NSMutableArray *contestantsK;
+
+
 @end

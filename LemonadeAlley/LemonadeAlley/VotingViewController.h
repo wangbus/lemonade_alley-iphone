@@ -15,5 +15,6 @@
 
 @property (strong, nonatomic) ContestantsInfoAgent *contestantsInfoAgent;
 @property (strong, nonatomic) MBProgressHUD *HUD;
+@property (strong, nonatomic) NSMutableArray *arrayOfSections;
 
 @end

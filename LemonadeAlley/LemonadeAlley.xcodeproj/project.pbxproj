@@ -565,6 +565,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A314C46E145CDE4200CFC860 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				A35145D71453B0DB00A10826 /* AboutViewController.h */,
+				A35145D81453B0DB00A10826 /* AboutViewController.m */,
+				A3111B5F145432C7001019E7 /* PageViewController.h */,
+				A3111B60145432C7001019E7 /* PageViewController.m */,
+			);
+			name = About;
+			sourceTree = "<group>";
+		};
+		A314C470145CDE5400CFC860 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				A3D1306A144BD0E50019A696 /* NewsViewController.h */,
+				A3D1306B144BD0E50019A696 /* NewsViewController.m */,
+				A3DB1230144B934C00DFC686 /* PostViewController.h */,
+				A3DB1231144B934C00DFC686 /* PostViewController.m */,
+			);
+			name = News;
+			sourceTree = "<group>";
+		};
+		A314C471145CDE7300CFC860 /* Voting */ = {
+			isa = PBXGroup;
+			children = (
+				A3B4484F145983620045FCC3 /* VotingViewController.h */,
+				A3B44850145983620045FCC3 /* VotingViewController.m */,
+				A3B01A59145A7BD9007D3CDD /* FacebookViewController.h */,
+				A3B01A5A145A7BD9007D3CDD /* FacebookViewController.m */,
+			);
+			name = Voting;
+			sourceTree = "<group>";
+		};
 		A342AA77144C4A1E0051DAC3 /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
@@ -668,18 +701,9 @@
 				A3DB1222144B934B00DFC686 /* AppDelegate.m */,
 				A3DB1224144B934B00DFC686 /* MainStoryboard_iPhone.storyboard */,
 				A3DB1227144B934C00DFC686 /* MainStoryboard_iPad.storyboard */,
-				A35145D71453B0DB00A10826 /* AboutViewController.h */,
-				A35145D81453B0DB00A10826 /* AboutViewController.m */,
-				A3D1306A144BD0E50019A696 /* NewsViewController.h */,
-				A3D1306B144BD0E50019A696 /* NewsViewController.m */,
-				A3111B5F145432C7001019E7 /* PageViewController.h */,
-				A3111B60145432C7001019E7 /* PageViewController.m */,
-				A3DB1230144B934C00DFC686 /* PostViewController.h */,
-				A3DB1231144B934C00DFC686 /* PostViewController.m */,
-				A3B4484F145983620045FCC3 /* VotingViewController.h */,
-				A3B44850145983620045FCC3 /* VotingViewController.m */,
-				A3B01A59145A7BD9007D3CDD /* FacebookViewController.h */,
-				A3B01A5A145A7BD9007D3CDD /* FacebookViewController.m */,
+				A314C46E145CDE4200CFC860 /* About */,
+				A314C470145CDE5400CFC860 /* News */,
+				A314C471145CDE7300CFC860 /* Voting */,
 				A3DB122A144B934C00DFC686 /* LemonadeAlley.xcdatamodeld */,
 				A3DB1219144B934B00DFC686 /* Supporting Files */,
 			);
@@ -1336,6 +1360,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jian Shi WANG (M7SG4N2CX7)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1351,6 +1376,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PROVISIONING_PROFILE = "5215CD0E-7CB8-4556-8D0B-F78BC6A77B3D";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1362,6 +1388,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jian Shi WANG (M7SG4N2CX7)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1371,6 +1398,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "5215CD0E-7CB8-4556-8D0B-F78BC6A77B3D";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;

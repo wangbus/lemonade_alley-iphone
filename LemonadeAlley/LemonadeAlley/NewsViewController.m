@@ -1,3 +1,7 @@
+#define FONT_SIZE 14.0f
+#define CELL_CONTENT_WIDTH 320.0f
+#define CELL_CONTENT_MARGIN 10.0f
+
 #import "NewsViewController.h"
 #import "WordpressPostAgent.h"
 #import "PostViewController.h"
@@ -55,8 +59,7 @@
   [super viewWillAppear:animated];
 }
 
-- (void)viewDidAppear:(BOOL)animated
-{
+- (void)viewDidAppear:(BOOL)animated {
   [super viewDidAppear:animated];
 }
 
@@ -105,8 +108,37 @@
   
   // Configure the cell...
   cell.textLabel.text = [post objectForKey:@"title"];
-  cell.detailTextLabel.text = [post objectForKey:@"modified"];
+  
+  cell.textLabel.lineBreakMode = UILineBreakModeWordWrap;
+  cell.textLabel.numberOfLines = 0;
+  cell.textLabel.backgroundColor = [UIColor clearColor];
+//  cell.detailTextLabel.text = 
+  
+  NSString *modified = [post objectForKey:@"modified"];
+  NSDateFormatter *dateFormatterFromWordpress = [[NSDateFormatter alloc] init];
+  [dateFormatterFromWordpress setDateFormat:@"yyyy-MM-dd HH:mm:ss"];    
+  NSDate *date = [dateFormatterFromWordpress dateFromString:modified];
+  
+  NSLocale *locale = [NSLocale currentLocale];
+  NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init]; 
+  NSString *dateFormat = [NSDateFormatter dateFormatFromTemplate:@"E MMM d yyyy HH:mm" options:0 locale:locale];
+  [dateFormatter setDateFormat:dateFormat];
+  [dateFormatter setLocale:locale];
+  
+  NSString *modifiedFormatted = [dateFormatter stringFromDate: date];
+  cell.detailTextLabel.text = [NSString stringWithFormat:@"Posted: %@", modifiedFormatted];
+  
+  cell.detailTextLabel.backgroundColor = [UIColor clearColor];
   return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+  NSDictionary *post = [[wordpressPostAgent posts] objectAtIndex:[indexPath row]];
+  NSString *text = [post objectForKey:@"title"];
+  CGSize constraint = CGSizeMake(CELL_CONTENT_WIDTH - (CELL_CONTENT_MARGIN * 2), 20000.0f);
+  CGSize size = [text sizeWithFont:[UIFont systemFontOfSize:FONT_SIZE] constrainedToSize:constraint lineBreakMode:UILineBreakModeWordWrap];
+  CGFloat height = MAX(size.height, 44.0f);
+  return height + (CELL_CONTENT_MARGIN * 2);
 }
 
 /*
