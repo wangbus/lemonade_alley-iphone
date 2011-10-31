@@ -11,6 +11,8 @@
 	<key>CFBundleIconFiles</key>
 	<array>
 		<string>Icon.png</string>
+		<string>Icon57.png</string>
+		<string>Icon512.png</string>
 	</array>
 	<key>CFBundleIdentifier</key>
 	<string>org.hicapacity.${PRODUCT_NAME:rfc1034identifier}</string>

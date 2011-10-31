@@ -11,6 +11,8 @@
 		A342AA7A144C4A4E0051DAC3 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A342AA79144C4A4E0051DAC3 /* MBProgressHUD.m */; };
 		A342AA7D144C4AE10051DAC3 /* WordpressPostAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = A342AA7C144C4AE10051DAC3 /* WordpressPostAgent.m */; };
 		A35145D91453B0DB00A10826 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A35145D81453B0DB00A10826 /* AboutViewController.m */; };
+		A3801374145DC9CB00F5F0B6 /* Icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = A3801372145DC9CB00F5F0B6 /* Icon57.png */; };
+		A3801375145DC9CB00F5F0B6 /* Icon512.png in Resources */ = {isa = PBXBuildFile; fileRef = A3801373145DC9CB00F5F0B6 /* Icon512.png */; };
 		A39B315D14566A8D00DE2A88 /* Facebook.m in Sources */ = {isa = PBXBuildFile; fileRef = A39B314614566A8D00DE2A88 /* Facebook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A39B315E14566A8D00DE2A88 /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A39B314814566A8D00DE2A88 /* FBDialog.bundle */; };
 		A39B315F14566A8D00DE2A88 /* FBDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = A39B314A14566A8D00DE2A88 /* FBDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -275,6 +277,8 @@
 		A342AA7C144C4AE10051DAC3 /* WordpressPostAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WordpressPostAgent.m; path = models/WordpressPostAgent.m; sourceTree = "<group>"; };
 		A35145D71453B0DB00A10826 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		A35145D81453B0DB00A10826 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		A3801372145DC9CB00F5F0B6 /* Icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon57.png; sourceTree = "<group>"; };
+		A3801373145DC9CB00F5F0B6 /* Icon512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon512.png; sourceTree = "<group>"; };
 		A39B314514566A8D00DE2A88 /* Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facebook.h; sourceTree = "<group>"; };
 		A39B314614566A8D00DE2A88 /* Facebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Facebook.m; sourceTree = "<group>"; };
 		A39B314714566A8D00DE2A88 /* FBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBConnect.h; sourceTree = "<group>"; };
@@ -318,7 +322,7 @@
 		A3D1309B144BD3C80019A696 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		A3D1309D144BD3D90019A696 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		A3D1309F144BD3F60019A696 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		A3DB120C144B934B00DFC686 /* LemonadeAlley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LemonadeAlley.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3DB120C144B934B00DFC686 /* lemonadealley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lemonadealley.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3DB1210144B934B00DFC686 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A3DB1212144B934B00DFC686 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A3DB1214144B934B00DFC686 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -657,6 +661,8 @@
 			children = (
 				A3A18635145DB843000ACE25 /* Default.png */,
 				A3A1862C145D27B4000ACE25 /* Icon.png */,
+				A3801372145DC9CB00F5F0B6 /* Icon57.png */,
+				A3801373145DC9CB00F5F0B6 /* Icon512.png */,
 				A3B44839145510970045FCC3 /* lemon_200x200.png */,
 				A3B4483714550AAC0045FCC3 /* table_bg.png */,
 				A3B448331454FEBA0045FCC3 /* nav_bg_44.png */,
@@ -681,7 +687,7 @@
 		A3DB120D144B934B00DFC686 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A3DB120C144B934B00DFC686 /* LemonadeAlley.app */,
+				A3DB120C144B934B00DFC686 /* lemonadealley.app */,
 				A3DB1238144B934C00DFC686 /* LemonadeAlleyTests.octest */,
 			);
 			name = Products;
@@ -976,9 +982,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A3DB120B144B934B00DFC686 /* LemonadeAlley */ = {
+		A3DB120B144B934B00DFC686 /* lemonadealley */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A3DB124B144B934C00DFC686 /* Build configuration list for PBXNativeTarget "LemonadeAlley" */;
+			buildConfigurationList = A3DB124B144B934C00DFC686 /* Build configuration list for PBXNativeTarget "lemonadealley" */;
 			buildPhases = (
 				A3DB1208144B934B00DFC686 /* Sources */,
 				A3DB1209144B934B00DFC686 /* Frameworks */,
@@ -988,9 +994,9 @@
 			);
 			dependencies = (
 			);
-			name = LemonadeAlley;
+			name = lemonadealley;
 			productName = LemonadeAlley;
-			productReference = A3DB120C144B934B00DFC686 /* LemonadeAlley.app */;
+			productReference = A3DB120C144B934B00DFC686 /* lemonadealley.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A3DB1237144B934C00DFC686 /* LemonadeAlleyTests */ = {
@@ -1032,7 +1038,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A3DB120B144B934B00DFC686 /* LemonadeAlley */,
+				A3DB120B144B934B00DFC686 /* lemonadealley */,
 				A3DB1237144B934C00DFC686 /* LemonadeAlleyTests */,
 			);
 		};
@@ -1253,6 +1259,8 @@
 				A39B315E14566A8D00DE2A88 /* FBDialog.bundle in Resources */,
 				A3A1862D145D27B4000ACE25 /* Icon.png in Resources */,
 				A3A18636145DB843000ACE25 /* Default.png in Resources */,
+				A3801374145DC9CB00F5F0B6 /* Icon57.png in Resources */,
+				A3801375145DC9CB00F5F0B6 /* Icon512.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1327,7 +1335,7 @@
 /* Begin PBXTargetDependency section */
 		A3DB123F144B934C00DFC686 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A3DB120B144B934B00DFC686 /* LemonadeAlley */;
+			target = A3DB120B144B934B00DFC686 /* lemonadealley */;
 			targetProxy = A3DB123E144B934C00DFC686 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1374,8 +1382,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Jian Shi WANG (M7SG4N2CX7)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1390,7 +1398,9 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PROVISIONING_PROFILE = "5215CD0E-7CB8-4556-8D0B-F78BC6A77B3D";
+				PRODUCT_NAME = lemonadealley;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1402,8 +1412,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Jian Shi WANG (M7SG4N2CX7)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -1412,7 +1422,9 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "5215CD0E-7CB8-4556-8D0B-F78BC6A77B3D";
+				PRODUCT_NAME = lemonadealley;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1422,8 +1434,8 @@
 		A3DB124C144B934C00DFC686 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Jian Shi WANG (M7SG4N2CX7)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jian Shi WANG (M7SG4N2CX7)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LemonadeAlley/LemonadeAlley-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -1431,8 +1443,9 @@
 				INFOPLIST_FILE = "LemonadeAlley/LemonadeAlley-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5215CD0E-7CB8-4556-8D0B-F78BC6A77B3D";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5215CD0E-7CB8-4556-8D0B-F78BC6A77B3D";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1440,8 +1453,8 @@
 		A3DB124D144B934C00DFC686 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Jian Shi WANG (M7SG4N2CX7)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jian Shi WANG (M7SG4N2CX7)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LemonadeAlley/LemonadeAlley-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -1449,8 +1462,9 @@
 				INFOPLIST_FILE = "LemonadeAlley/LemonadeAlley-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5215CD0E-7CB8-4556-8D0B-F78BC6A77B3D";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5215CD0E-7CB8-4556-8D0B-F78BC6A77B3D";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -1501,7 +1515,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A3DB124B144B934C00DFC686 /* Build configuration list for PBXNativeTarget "LemonadeAlley" */ = {
+		A3DB124B144B934C00DFC686 /* Build configuration list for PBXNativeTarget "lemonadealley" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A3DB124C144B934C00DFC686 /* Debug */,
